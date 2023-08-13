@@ -33,11 +33,70 @@
     </item>
     
     <item>
-      <title>Force-based gradient descent method for _ab initio_ atomic structure relaxation</title>
+      <title>Force-based gradient descent method for ab initio atomic structure relaxation</title>
       <link>https://huyukuan.github.io/publication/journal-article/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://huyukuan.github.io/publication/journal-article/</guid>
-      <description>&lt;!---
+      <description>&lt;hr&gt;
+&lt;p&gt;title: Force-based gradient descent method for ab initio atomic structure relaxation
+authors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;admin&lt;/li&gt;
+&lt;li&gt;Xingyu Gao&lt;/li&gt;
+&lt;li&gt;Yafan Zhao&lt;/li&gt;
+&lt;li&gt;Xin Liu&lt;/li&gt;
+&lt;li&gt;Haifeng Song
+date: &amp;ldquo;2022-09-01T00:00:00Z&amp;rdquo;
+doi: &amp;ldquo;10.1103/PhysRevB.106.104101&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;schedule-page-publish-date-not-publications-date&#34;&gt;Schedule page publish date (NOT publication&amp;rsquo;s date).&lt;/h1&gt;
+&lt;p&gt;#publishDate: &amp;ldquo;2017-01-01T00:00:00Z&amp;rdquo;&lt;/p&gt;
+&lt;h1 id=&#34;publication-type&#34;&gt;Publication type.&lt;/h1&gt;
+&lt;h1 id=&#34;legend-0--uncategorized-1--conference-paper-2--journal-article&#34;&gt;Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;&lt;/h1&gt;
+&lt;h1 id=&#34;3--preprint--working-paper-4--report-5--book-6--book-section&#34;&gt;3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;&lt;/h1&gt;
+&lt;h1 id=&#34;7--thesis-8--patent&#34;&gt;7 = Thesis; 8 = Patent&lt;/h1&gt;
+&lt;p&gt;publication_types: [&amp;ldquo;2&amp;rdquo;]&lt;/p&gt;
+&lt;h1 id=&#34;publication-name-and-optional-abbreviated-publication-name&#34;&gt;Publication name and optional abbreviated publication name.&lt;/h1&gt;
+&lt;p&gt;publication: &amp;ldquo;&lt;em&gt;Physical Review B, 106&lt;/em&gt;(10)&amp;rdquo;
+publication_short: &amp;quot;&amp;quot;&lt;/p&gt;
+&lt;p&gt;abstract: Force-based algorithms for &lt;em&gt;ab initio&lt;/em&gt; atomic structure relaxation, such as conjugate gradient methods, usually get stuck in the line minimization processes along search directions, where expensive &lt;em&gt;ab initio&lt;/em&gt; calculations are triggered frequently to test trial positions before locating the next iterate. We present a force-based gradient descent method, WANBB, that circumvents the deficiency. At each iteration, WANBB enters the line minimization process with a trial step size capturing the local curvature of the energy surface. The exit is controlled by a nonrestrictive criterion that tends to accept early trials. These two ingredients streamline the line minimization process in WANBB. The numerical simulations on nearly 80 systems with good universality demonstrate the considerable compression of WANBB on the cost for the unaccepted trials compared with conjugate gradient methods. We also observe across the board significant and universal speedups as well as the superior robustness of WANBB over several widely used methods. The latter point is theoretically established. The implementation of WANBB is pretty simple, in that no a priori physical knowledge is required and only three parameters are present without tuning.&lt;/p&gt;
+&lt;h1 id=&#34;summary-an-optional-shortened-abstract&#34;&gt;Summary. An optional shortened abstract.&lt;/h1&gt;
+&lt;p&gt;#summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.&lt;/p&gt;
+&lt;p&gt;tags:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source Themes
+featured: false&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;links&#34;&gt;links:&lt;/h1&gt;
+&lt;h1 id=&#34;--name-&#34;&gt;- name: &amp;quot;&amp;quot;&lt;/h1&gt;
+&lt;h1 id=&#34;url-&#34;&gt;url: &amp;quot;&amp;quot;&lt;/h1&gt;
+&lt;p&gt;url_pdf: &amp;lsquo;&lt;a href=&#34;https://arxiv.org/pdf/2206.02091.pdf%27&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://arxiv.org/pdf/2206.02091.pdf&#39;&lt;/a&gt;
+url_code: &amp;rsquo;&amp;rsquo;
+url_dataset: &amp;rsquo;&#39;
+url_poster: &amp;rsquo;&#39;
+url_project: &amp;rsquo;&#39;
+url_slides: &amp;rsquo;&#39;
+url_source: &amp;rsquo;&#39;
+url_video: &#39;&#39;&lt;/p&gt;
+&lt;h1 id=&#34;featured-image&#34;&gt;Featured image&lt;/h1&gt;
+&lt;h1 id=&#34;to-use-add-an-image-named-featuredjpgpng-to-your-pages-folder&#34;&gt;To use, add an image named &lt;code&gt;featured.jpg/png&lt;/code&gt; to your page&amp;rsquo;s folder.&lt;/h1&gt;
+&lt;p&gt;#image:&lt;/p&gt;
+&lt;h1 id=&#34;caption-&#34;&gt;caption: &#39;&#39;&lt;/h1&gt;
+&lt;h1 id=&#34;focal_point-&#34;&gt;focal_point: &amp;quot;&amp;quot;&lt;/h1&gt;
+&lt;h1 id=&#34;preview_only-false&#34;&gt;preview_only: false&lt;/h1&gt;
+&lt;h1 id=&#34;associated-projects-optional&#34;&gt;Associated Projects (optional).&lt;/h1&gt;
+&lt;h1 id=&#34;associate-this-publication-with-one-or-more-of-your-projects&#34;&gt;Associate this publication with one or more of your projects.&lt;/h1&gt;
+&lt;h1 id=&#34;simply-enter-your-projects-folder-or-file-name-without-extension&#34;&gt;Simply enter your project&amp;rsquo;s folder or file name without extension.&lt;/h1&gt;
+&lt;h1 id=&#34;eg-internal-project-references-contentprojectinternal-projectindexmd&#34;&gt;E.g. &lt;code&gt;internal-project&lt;/code&gt; references &lt;code&gt;content/project/internal-project/index.md&lt;/code&gt;.&lt;/h1&gt;
+&lt;h1 id=&#34;otherwise-set-projects-&#34;&gt;Otherwise, set &lt;code&gt;projects: []&lt;/code&gt;.&lt;/h1&gt;
+&lt;p&gt;projects: []&lt;/p&gt;
+&lt;h1 id=&#34;slides-optional&#34;&gt;Slides (optional).&lt;/h1&gt;
+&lt;h1 id=&#34;associate-this-publication-with-markdown-slides&#34;&gt;Associate this publication with Markdown slides.&lt;/h1&gt;
+&lt;h1 id=&#34;simply-enter-your-slide-decks-filename-without-extension&#34;&gt;Simply enter your slide deck&amp;rsquo;s filename without extension.&lt;/h1&gt;
+&lt;h1 id=&#34;eg-slides-example-references-contentslidesexampleindexmd&#34;&gt;E.g. &lt;code&gt;slides: &amp;quot;example&amp;quot;&lt;/code&gt; references &lt;code&gt;content/slides/example/index.md&lt;/code&gt;.&lt;/h1&gt;
+&lt;h1 id=&#34;otherwise-set-slides-&#34;&gt;Otherwise, set &lt;code&gt;slides: &amp;quot;&amp;quot;&lt;/code&gt;.&lt;/h1&gt;
+&lt;h2 id=&#34;slides-&#34;&gt;slides: &#39;&#39;&lt;/h2&gt;
+&lt;!---
 title: &#34;An example journal article&#34;
 authors: 
 - admin
@@ -310,7 +369,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-287169534&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-498513762&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -320,7 +379,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-287169534&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-498513762&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
