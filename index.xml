@@ -33,7 +33,7 @@
     </item>
     
     <item>
-      <title>Force-based gradient descent method for *ab initio* atomic structure relaxation</title>
+      <title>Force-based gradient descent method for _ab initio_ atomic structure relaxation</title>
       <link>https://huyukuan.github.io/publication/journal-article/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://huyukuan.github.io/publication/journal-article/</guid>
@@ -310,7 +310,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-583421679&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-239867451&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -320,7 +320,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-583421679&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-239867451&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
