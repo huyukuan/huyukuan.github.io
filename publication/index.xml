@@ -5,12 +5,28 @@
     <link>https://huyukuan.github.io/publication/</link>
       <atom:link href="https://huyukuan.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 11 May 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 12 Jun 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://huyukuan.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://huyukuan.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>A global optimization approach for multimarginal optimal transport problems with Coulomb cost</title>
+      <link>https://huyukuan.github.io/publication/2023-sisc-mmot/</link>
+      <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://huyukuan.github.io/publication/2023-sisc-mmot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The convergence properties of infeasible inexact proximal alternating linearized minimization</title>
+      <link>https://huyukuan.github.io/publication/2023-scmath-palmi/</link>
+      <pubDate>Wed, 17 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://huyukuan.github.io/publication/2023-scmath-palmi/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>The exactness of the $\ell_1$ penalty function for a class of mathematical programs with generalized complementarity constraints</title>
@@ -25,22 +41,6 @@
       <link>https://huyukuan.github.io/publication/2022-prb-wanbb/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://huyukuan.github.io/publication/2022-prb-wanbb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Force-based gradient descent method for ab initio atomic structure relaxation</title>
-      <link>https://huyukuan.github.io/publication/2023-scmath-palmi/</link>
-      <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://huyukuan.github.io/publication/2023-scmath-palmi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Force-based gradient descent method for ab initio atomic structure relaxation</title>
-      <link>https://huyukuan.github.io/publication/2023-sisc-mmot/</link>
-      <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://huyukuan.github.io/publication/2023-sisc-mmot/</guid>
       <description></description>
     </item>
     
