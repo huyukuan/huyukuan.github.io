@@ -5,12 +5,20 @@
     <link>https://huyukuan.github.io/publication-type/3/</link>
       <atom:link href="https://huyukuan.github.io/publication-type/3/index.xml" rel="self" type="application/rss+xml" />
     <description>3</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 30 Jun 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://huyukuan.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>3</title>
       <link>https://huyukuan.github.io/publication-type/3/</link>
     </image>
+    
+    <item>
+      <title>Sampling-based approaches for multimarginal optimal transport problems with Coulomb cost</title>
+      <link>https://huyukuan.github.io/preprint/2023-arxiv-mmotsampling/</link>
+      <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://huyukuan.github.io/preprint/2023-arxiv-mmotsampling/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>An example preprint / working paper</title>
