@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Source Themes | Yukuan Hu</title>
+    <title>Source Themes | Yukuan Hu&#39;s Homepage</title>
     <link>https://huyukuan.github.io/tag/source-themes/</link>
       <atom:link href="https://huyukuan.github.io/tag/source-themes/index.xml" rel="self" type="application/rss+xml" />
     <description>Source Themes</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 30 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 21 Jul 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://huyukuan.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Source Themes</title>
       <link>https://huyukuan.github.io/tag/source-themes/</link>
     </image>
+    
+    <item>
+      <title>Computational methods and device for crystal structure relaxation with fixed lattice volume (原子结构弛豫的非单调线搜索方法及装置)</title>
+      <link>https://huyukuan.github.io/patent/2023-prc-plgb/</link>
+      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://huyukuan.github.io/patent/2023-prc-plgb/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Sampling-based approaches for multimarginal optimal transport problems with Coulomb cost</title>
@@ -41,6 +49,14 @@
       <link>https://huyukuan.github.io/publication/2023-fmre-l1mpgcc/</link>
       <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
       <guid>https://huyukuan.github.io/publication/2023-fmre-l1mpgcc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nonmonotone line search methods and device for atomic structure relaxation (原子结构弛豫的非单调线搜索方法及装置)</title>
+      <link>https://huyukuan.github.io/patent/2022-prc-wanbb/</link>
+      <pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://huyukuan.github.io/patent/2022-prc-wanbb/</guid>
       <description></description>
     </item>
     
