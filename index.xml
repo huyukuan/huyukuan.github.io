@@ -13,22 +13,6 @@
     </image>
     
     <item>
-      <title>Sampling-based methods for multi-block optimization problems over transport polytopes</title>
-      <link>https://huyukuan.github.io/talk/sampling-based-methods-for-multi-block-optimization-problems-over-transport-polytopes/</link>
-      <pubDate>Thu, 24 Aug 2023 15:30:00 +0000</pubDate>
-      <guid>https://huyukuan.github.io/talk/sampling-based-methods-for-multi-block-optimization-problems-over-transport-polytopes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sampling-based methods for multi-block optimization problems over transport polytopes</title>
-      <link>https://huyukuan.github.io/talk/sampling-based-methods-for-multi-block-optimization-problems-over-transport-polytopes/</link>
-      <pubDate>Tue, 15 Aug 2023 16:50:00 +0000</pubDate>
-      <guid>https://huyukuan.github.io/talk/sampling-based-methods-for-multi-block-optimization-problems-over-transport-polytopes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Computational methods and device for crystal structure relaxation with fixed lattice volume (原子结构弛豫的非单调线搜索方法及装置)</title>
       <link>https://huyukuan.github.io/patent/2023-prc-plgb/</link>
       <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
@@ -268,7 +252,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-478612593&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-685739124&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -278,7 +262,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-478612593&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-685739124&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
