@@ -5,7 +5,7 @@
     <link>https://huyukuan.github.io/tag/source-themes/</link>
       <atom:link href="https://huyukuan.github.io/tag/source-themes/index.xml" rel="self" type="application/rss+xml" />
     <description>Source Themes</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 21 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 24 Aug 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://huyukuan.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Source Themes</title>
@@ -13,10 +13,26 @@
     </image>
     
     <item>
-      <title>Computational methods and device for crystal structure relaxation with fixed lattice volume (固定晶格体积晶体结构弛豫的计算方法及装置)</title>
-      <link>https://huyukuan.github.io/patent/2023-prc-plgb/</link>
+      <title>The 10th International Congress on Industrial and Applied Mathematics (ICIAM 2023)</title>
+      <link>https://huyukuan.github.io/talk/2023-aug-iciam/</link>
+      <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://huyukuan.github.io/talk/2023-aug-iciam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The 14th International Conference on Numerical Optimization and Numerical Linear Algebra (ICNONLA 2023)</title>
+      <link>https://huyukuan.github.io/talk/2023-aug-icnonla/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://huyukuan.github.io/talk/2023-aug-icnonla/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>固定晶格体积晶体结构弛豫的计算方法及装置</title>
+      <link>https://huyukuan.github.io/patent/2023-cn-plgb/</link>
       <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://huyukuan.github.io/patent/2023-prc-plgb/</guid>
+      <guid>https://huyukuan.github.io/patent/2023-cn-plgb/</guid>
       <description></description>
     </item>
     
@@ -37,6 +53,14 @@
     </item>
     
     <item>
+      <title>Applied Math Ph.D. Seminar at Fudan University</title>
+      <link>https://huyukuan.github.io/talk/2023-jun-fduamphds/</link>
+      <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://huyukuan.github.io/talk/2023-jun-fduamphds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The convergence properties of infeasible inexact proximal alternating linearized minimization</title>
       <link>https://huyukuan.github.io/publication/2023-scmath-palmi/</link>
       <pubDate>Wed, 17 May 2023 00:00:00 +0000</pubDate>
@@ -53,10 +77,10 @@
     </item>
     
     <item>
-      <title>Nonmonotone line search methods and device for atomic structure relaxation (原子结构弛豫的非单调线搜索方法及装置)</title>
-      <link>https://huyukuan.github.io/patent/2022-prc-wanbb/</link>
+      <title>原子结构弛豫的非单调线搜索方法及装置</title>
+      <link>https://huyukuan.github.io/patent/2022-cn-wanbb/</link>
       <pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://huyukuan.github.io/patent/2022-prc-wanbb/</guid>
+      <guid>https://huyukuan.github.io/patent/2022-cn-wanbb/</guid>
       <description></description>
     </item>
     
