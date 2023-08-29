@@ -2,14 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://huyukuan.github.io/publication-type/0/</loc>
-    <lastmod>2023-08-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://huyukuan.github.io/publication_types/</loc>
-    <lastmod>2023-08-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://huyukuan.github.io/talk/</loc>
     <lastmod>2023-08-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -30,10 +22,6 @@
     <lastmod>2023-08-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://huyukuan.github.io/publication-type/8/</loc>
-    <lastmod>2023-07-21T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://huyukuan.github.io/patent/</loc>
     <lastmod>2023-07-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -43,6 +31,10 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://huyukuan.github.io/publication-type/3/</loc>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://huyukuan.github.io/publication_types/</loc>
     <lastmod>2023-06-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -74,6 +66,14 @@
     <lastmod>2023-05-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://huyukuan.github.io/award/2023-fsiciam/</loc>
+    <lastmod>2023-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://huyukuan.github.io/award/</loc>
+    <lastmod>2023-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://huyukuan.github.io/patent/2022-cn-wanbb/</loc>
     <lastmod>2022-12-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -84,6 +84,22 @@
   </url><url>
     <loc>https://huyukuan.github.io/publication/2022-prb-wanbb/</loc>
     <lastmod>2022-09-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://huyukuan.github.io/award/2021-2022-lkhscholar/</loc>
+    <lastmod>2021-11-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://huyukuan.github.io/award/2019-gradshanghai/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://huyukuan.github.io/award/2019-gradthesis/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://huyukuan.github.io/award/2018-sas/</loc>
+    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://huyukuan.github.io/tag/deep-learning/</loc>
