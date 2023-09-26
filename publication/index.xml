@@ -5,12 +5,20 @@
     <link>https://huyukuan.github.io/publication/</link>
       <atom:link href="https://huyukuan.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 30 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 26 Sep 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://huyukuan.github.io/media/icon_huf7d2ae589d240638b0dc23db94c10dcf_18673_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://huyukuan.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>The convergence properties of infeasible inexact proximal alternating linearized minimization</title>
+      <link>https://huyukuan.github.io/publication/2023-scmath-palmi/</link>
+      <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://huyukuan.github.io/publication/2023-scmath-palmi/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Sampling-based approaches for multimarginal optimal transport problems with Coulomb cost</title>
@@ -25,14 +33,6 @@
       <link>https://huyukuan.github.io/publication/2023-sisc-mmot/</link>
       <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
       <guid>https://huyukuan.github.io/publication/2023-sisc-mmot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>The convergence properties of infeasible inexact proximal alternating linearized minimization</title>
-      <link>https://huyukuan.github.io/publication/2023-scmath-palmi/</link>
-      <pubDate>Wed, 17 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://huyukuan.github.io/publication/2023-scmath-palmi/</guid>
       <description></description>
     </item>
     

@@ -5,12 +5,20 @@
     <link>https://huyukuan.github.io/award/</link>
       <atom:link href="https://huyukuan.github.io/award/index.xml" rel="self" type="application/rss+xml" />
     <description>Selected Awards</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 15 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 26 Sep 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://huyukuan.github.io/media/icon_huf7d2ae589d240638b0dc23db94c10dcf_18673_512x512_fill_lanczos_center_3.png</url>
       <title>Selected Awards</title>
       <link>https://huyukuan.github.io/award/</link>
     </image>
+    
+    <item>
+      <title>AMSS Special Prize of President Scholarship</title>
+      <link>https://huyukuan.github.io/award/2023-amsspresidentspecial/</link>
+      <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://huyukuan.github.io/award/2023-amsspresidentspecial/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Financial Support Program</title>
