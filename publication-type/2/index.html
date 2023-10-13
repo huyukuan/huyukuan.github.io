@@ -960,7 +960,7 @@
       <div class="article-style">
         <p>We develop an optimization approach for the multimarginal optimal transport problems with Coulomb cost (MMOT), arising as the strong-interaction limit of density functional theory (DFT). This work may contribute to a better understanding of strongly correlated electrons systems, for which the conventional Kohn-Sham DFT induces large systematic errors.</p>
 <h6 id="setting">Setting</h6>
-<p>We consider the MMOT under a Monge-like ansatz. The Monge-like ansatz explicitly describes the coupling between electron positions, amounts to a spectacular dimension reduction, and generalizes the famous Monge ansatz in the OT community. When the number of electrons exceeds 2, the MMOT turns into a nonconvex optimization problem. As such, existing works employing the Monge-like ansatz limit the focus on two-electron systems.</p>
+<p>We consider the MMOT under a Monge-like ansatz. The Monge-like ansatz explicitly describes the coupling between electron positions, amounts to a spectacular dimension reduction, and generalizes the famous Monge ansatz in the OT community. When the number of electrons exceeds 2, the MMOT turns into a nonconvex optimization problem. As such, existing works employing the Monge-like ansatz limit the focus to two-electron systems.</p>
 <h6 id="method">Method</h6>
 <p>We develop a global optimization approach for the nonconvex problem, featuring</p>
 <ul>
@@ -1088,7 +1088,7 @@
     <a href="/publication/2023-fmre-l1mpgcc/"  class="summary-link">
       <div class="article-style">
         <p>We establish the exactness of $l_1$ penalty function for a class of mathematical programs with generalized complementarity constraints (MPGCC). MPGCC extends the notion of mathematical programs with complementarity constraints (MPCC), in that every two block variables complement each other.</p>
-<p>MP(G)CC is notorious for its violation of commonly used constraint qualifications (e.g., Mangasarian-Fromovitz constraint qualification), rendering the Karush-Kuhn-Tucker conditions no longer necessary. A simple treatment for this issue is to penalize the complementarity constraints in $l_1$ form. It is thus of importance to study the exactness of the penalty function, i.e., whether the penalty problem shares the same optimal solution set with the original one.</p>
+<p>MP(G)CC is notorious for its violation of commonly used constraint qualifications (e.g., Mangasarian-Fromovitz constraint qualification), rendering the Karush-Kuhn-Tucker conditions no longer necessary. A simple treatment for this issue is to penalize the complementarity constraints in $l_1$ form. It is thus of importance to study the exactness of the penalty function, i.e., whether the penalty problem shares the same optimal solution set with the original one given a sufficiently large penalty parameter.</p>
 <h6 id="setting">Setting</h6>
 <p>We focus our attention on a class of MPGCCs with multi-affine objective functions and separable polytopic feasible sets. The problem class applies to the network transportation and the understanding of strongly correlated quantum systems (see <a href="https://huyukuan.github.io/publication/2023-sisc-mmot/" target="_blank" rel="noopener">our paper</a> for details). Existing works either impose stringent assumptions or fail to cover the nonlinear and multi-block setting.</p>
 <h6 id="results">Results</h6>
@@ -1212,9 +1212,9 @@
 <p>The inefficiency of conjugate gradient methods can be credited to the improper line minimization (LM) process therein. We devise a novel method named WANBB with an improved LM process, featuring</p>
 <ul>
 <li>curvature-informed initial trial step sizes;</li>
-<li>a reweighted nonmonotone line minimization criterion.
-The convergence of WANBB to equilibrium is also rigorously established.</li>
+<li>a reweighted nonmonotone line minimization criterion.</li>
 </ul>
+<p>The convergence of WANBB to equilibrium is also rigorously established.</p>
 <h6 id="results">Results</h6>
 <p>We test WANBB against conjugate gradient methods and quasi-Newton methods over a benchmark set containing nearly 80 systems with good universality.</p>
 <ul>
