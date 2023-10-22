@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://huyukuan.github.io/research/atomistic-simulation/</loc>
+    <lastmod>2023-10-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://huyukuan.github.io/research/</loc>
+    <lastmod>2023-10-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://huyukuan.github.io/research/electronic-structure-calculations/</loc>
+    <lastmod>2023-10-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://huyukuan.github.io/patent/</loc>
     <lastmod>2023-10-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
