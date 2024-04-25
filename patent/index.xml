@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Patents | Yukuan Hu&#39;s Homepage</title>
+    <link>https://huyukuan.github.io/patent/</link>
+      <atom:link href="https://huyukuan.github.io/patent/index.xml" rel="self" type="application/rss+xml" />
+    <description>Patents</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 09 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://huyukuan.github.io/media/icon_huf7d2ae589d240638b0dc23db94c10dcf_18673_512x512_fill_lanczos_center_3.png</url>
+      <title>Patents</title>
+      <link>https://huyukuan.github.io/patent/</link>
+    </image>
+    
+    <item>
+      <title>晶体结构弛豫软件包 ProME-SuRe</title>
+      <link>https://huyukuan.github.io/patent/2023-cpr-sure/</link>
+      <pubDate>Mon, 09 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://huyukuan.github.io/patent/2023-cpr-sure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>固定晶格体积晶体结构弛豫的计算方法及装置</title>
+      <link>https://huyukuan.github.io/patent/2023-pat-plgb/</link>
+      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://huyukuan.github.io/patent/2023-pat-plgb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>原子结构弛豫的非单调线搜索方法及装置</title>
+      <link>https://huyukuan.github.io/patent/2022-pat-wanbb/</link>
+      <pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://huyukuan.github.io/patent/2022-pat-wanbb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
