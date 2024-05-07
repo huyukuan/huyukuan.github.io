@@ -13,6 +13,14 @@
     </image>
     
     <item>
+      <title>Projected gradient descent algorithm for ab initio crystal structure relaxation under a fixed unit cell volume</title>
+      <link>https://huyukuan.github.io/publication/2024-arxiv-panbb/</link>
+      <pubDate>Tue, 07 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://huyukuan.github.io/publication/2024-arxiv-panbb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sampling-based methods for multi-block optimization problems over transport polytopes</title>
       <link>https://huyukuan.github.io/publication/2023-arxiv-mbotp/</link>
       <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
@@ -58,7 +66,7 @@
 &lt;p&gt;Y. Hu, X. Gao, Y. Zhao, X. Liu, and H. Song. Force-based gradient descent method for &lt;em&gt;ab initio&lt;/em&gt; atomic structure relaxation. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;Physical Review B&lt;/em&gt;&lt;/font&gt;, 2022, 106(10): 104101. (&lt;a href=&#34;https://doi.org/10.1103/PhysRevB.106.104101&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Force-based projected gradient descent method for volume constrained &lt;em&gt;ab initio&lt;/em&gt; crystal structure relaxation. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;In preparation&lt;/em&gt;&lt;/font&gt;.&lt;/p&gt;
+&lt;p&gt;Y. Hu, J. Yin, X. Gao, X. Liu, and H. Song. Projected gradient descent algorithm for &lt;em&gt;ab initio&lt;/em&gt; crystal structure relaxation under a fixed unit cell volume. &lt;font face=&#34;Times New Roman&#34;&gt;arXiv preprint&lt;/font&gt;, 2024, arXiv:2405.02934.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Patents and Copyrights&lt;/strong&gt;&lt;/p&gt;

@@ -279,12 +279,12 @@
 
   
 
-<meta name="description" content="This paper focuses on multi-block optimization problems over transport polytopes, which underlie various applications including strongly correlated quantum physics and machine learning. Conventional block coordinate descent-type methods for the general multi-block problems store and operate on the matrix variables directly, resulting in formidable expenditure for large-scale settings. On the other hand, optimal transport problems, as a special case, have attracted extensive attention and numerical techniques that waive the use of the full matrices have recently emerged. However, it remains nontrivial to apply these techniques to the multi-block, possibly nonconvex problems with theoretical guarantees. In this work, we leverage the benefits of both sides and develop novel sampling-based block coordinate descent-type methods, which are equipped with either entropy regularization or Kullback-Leibler divergence. Each iteration of these methods solves subproblems restricted on the sampled degrees of freedom. Consequently, they involve only sparse matrices, which amounts to considerable complexity reductions. We explicitly characterize the sampling-induced errors and establish convergence and asymptotic properties for the methods equipped with the entropy regularization. Numerical experiments on typical strongly correlated electron systems corroborate their superior scalability over the methods utilizing full matrices. The advantage also enables the first visualization of approximate optimal transport maps between electron positions in three-dimensional contexts." />
+<meta name="description" content="This paper is concerned with *ab initio* crystal structure relaxation under a fixed unit cell volume, which is a step in calculating the static equations of state and forms the basis of thermodynamic property calculations for materials. The task can be formulated as an energy minimization with a determinant constraint. Widely used line minimization-based methods (e.g., conjugate gradient method) lack both efficiency and convergence guarantees due to the nonconvex nature of the feasible region as well as the significant differences in the curvatures of the potential energy surface with respect to atomic and lattice components. To this end, we propose a projected gradient descent algorithm named PANBB. It is equipped with (i) search direction projections onto the tangent spaces of the nonconvex feasible region for lattice vectors, (ii) distinct curvature-aware initial trial step sizes for atomic and lattice updates, and (iii) a nonrestrictive line minimization criterion as the stopping rule for the inner loop. It can be proved that PANBB favors theoretical convergence to equilibrium states. Across a benchmark set containing 223 structures from various categories, PANBB achieves average speedup factors of approximately 1.41 and 1.45 over the conjugate gradient method and direct inversion in the iterative subspace implemented in off-the-shelf simulation software, respectively. Moreover, it normally converges on all the systems, manifesting its unparalleled robustness. As an application, we calculate the static equations of state for the high-entropy alloy AlCoCrFeNi, which remains elusive owing to 160 atoms representing both chemical and magnetic disorder and the strong local lattice distortion. The results are consistent with the previous calculations and are further validated by experimental thermodynamic data." />
 
 
 
-<link rel="alternate" hreflang="en-us" href="https://huyukuan.github.io/publication/2023-arxiv-mbotp/" />
-<link rel="canonical" href="https://huyukuan.github.io/publication/2023-arxiv-mbotp/" />
+<link rel="alternate" hreflang="en-us" href="https://huyukuan.github.io/publication/2024-arxiv-panbb/" />
+<link rel="canonical" href="https://huyukuan.github.io/publication/2024-arxiv-panbb/" />
 
 
 
@@ -320,18 +320,18 @@
   <meta property="twitter:creator" content="@wowchemy" />
 <meta property="twitter:image" content="https://huyukuan.github.io/media/icon_huf7d2ae589d240638b0dc23db94c10dcf_18673_512x512_fill_lanczos_center_3.png" />
 <meta property="og:site_name" content="Yukuan Hu&#39;s Homepage" />
-<meta property="og:url" content="https://huyukuan.github.io/publication/2023-arxiv-mbotp/" />
-<meta property="og:title" content="Sampling-based methods for multi-block optimization problems over transport polytopes | Yukuan Hu&#39;s Homepage" />
-<meta property="og:description" content="This paper focuses on multi-block optimization problems over transport polytopes, which underlie various applications including strongly correlated quantum physics and machine learning. Conventional block coordinate descent-type methods for the general multi-block problems store and operate on the matrix variables directly, resulting in formidable expenditure for large-scale settings. On the other hand, optimal transport problems, as a special case, have attracted extensive attention and numerical techniques that waive the use of the full matrices have recently emerged. However, it remains nontrivial to apply these techniques to the multi-block, possibly nonconvex problems with theoretical guarantees. In this work, we leverage the benefits of both sides and develop novel sampling-based block coordinate descent-type methods, which are equipped with either entropy regularization or Kullback-Leibler divergence. Each iteration of these methods solves subproblems restricted on the sampled degrees of freedom. Consequently, they involve only sparse matrices, which amounts to considerable complexity reductions. We explicitly characterize the sampling-induced errors and establish convergence and asymptotic properties for the methods equipped with the entropy regularization. Numerical experiments on typical strongly correlated electron systems corroborate their superior scalability over the methods utilizing full matrices. The advantage also enables the first visualization of approximate optimal transport maps between electron positions in three-dimensional contexts." /><meta property="og:image" content="https://huyukuan.github.io/media/icon_huf7d2ae589d240638b0dc23db94c10dcf_18673_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:url" content="https://huyukuan.github.io/publication/2024-arxiv-panbb/" />
+<meta property="og:title" content="Projected gradient descent algorithm for ab initio crystal structure relaxation under a fixed unit cell volume | Yukuan Hu&#39;s Homepage" />
+<meta property="og:description" content="This paper is concerned with *ab initio* crystal structure relaxation under a fixed unit cell volume, which is a step in calculating the static equations of state and forms the basis of thermodynamic property calculations for materials. The task can be formulated as an energy minimization with a determinant constraint. Widely used line minimization-based methods (e.g., conjugate gradient method) lack both efficiency and convergence guarantees due to the nonconvex nature of the feasible region as well as the significant differences in the curvatures of the potential energy surface with respect to atomic and lattice components. To this end, we propose a projected gradient descent algorithm named PANBB. It is equipped with (i) search direction projections onto the tangent spaces of the nonconvex feasible region for lattice vectors, (ii) distinct curvature-aware initial trial step sizes for atomic and lattice updates, and (iii) a nonrestrictive line minimization criterion as the stopping rule for the inner loop. It can be proved that PANBB favors theoretical convergence to equilibrium states. Across a benchmark set containing 223 structures from various categories, PANBB achieves average speedup factors of approximately 1.41 and 1.45 over the conjugate gradient method and direct inversion in the iterative subspace implemented in off-the-shelf simulation software, respectively. Moreover, it normally converges on all the systems, manifesting its unparalleled robustness. As an application, we calculate the static equations of state for the high-entropy alloy AlCoCrFeNi, which remains elusive owing to 160 atoms representing both chemical and magnetic disorder and the strong local lattice distortion. The results are consistent with the previous calculations and are further validated by experimental thermodynamic data." /><meta property="og:image" content="https://huyukuan.github.io/media/icon_huf7d2ae589d240638b0dc23db94c10dcf_18673_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
       property="article:published_time"
-      content="2024-03-21T00:00:00&#43;00:00"
+      content="2024-05-07T00:00:00&#43;00:00"
     />
   
   
-    <meta property="article:modified_time" content="2024-03-21T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2024-05-07T00:00:00&#43;00:00">
   
 
 
@@ -355,12 +355,12 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://huyukuan.github.io/publication/2023-arxiv-mbotp/"
+    "@id": "https://huyukuan.github.io/publication/2024-arxiv-panbb/"
   },
-  "headline": "Sampling-based methods for multi-block optimization problems over transport polytopes",
+  "headline": "Projected gradient descent algorithm for ab initio crystal structure relaxation under a fixed unit cell volume",
   
-  "datePublished": "2024-03-21T00:00:00Z",
-  "dateModified": "2024-03-21T00:00:00Z",
+  "datePublished": "2024-05-07T00:00:00Z",
+  "dateModified": "2024-05-07T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -375,7 +375,7 @@
       "url": "https://huyukuan.github.io/media/icon_huf7d2ae589d240638b0dc23db94c10dcf_18673_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "This paper focuses on multi-block optimization problems over transport polytopes, which underlie various applications including strongly correlated quantum physics and machine learning. Conventional block coordinate descent-type methods for the general multi-block problems store and operate on the matrix variables directly, resulting in formidable expenditure for large-scale settings. On the other hand, optimal transport problems, as a special case, have attracted extensive attention and numerical techniques that waive the use of the full matrices have recently emerged. However, it remains nontrivial to apply these techniques to the multi-block, possibly nonconvex problems with theoretical guarantees. In this work, we leverage the benefits of both sides and develop novel sampling-based block coordinate descent-type methods, which are equipped with either entropy regularization or Kullback-Leibler divergence. Each iteration of these methods solves subproblems restricted on the sampled degrees of freedom. Consequently, they involve only sparse matrices, which amounts to considerable complexity reductions. We explicitly characterize the sampling-induced errors and establish convergence and asymptotic properties for the methods equipped with the entropy regularization. Numerical experiments on typical strongly correlated electron systems corroborate their superior scalability over the methods utilizing full matrices. The advantage also enables the first visualization of approximate optimal transport maps between electron positions in three-dimensional contexts."
+  "description": "This paper is concerned with *ab initio* crystal structure relaxation under a fixed unit cell volume, which is a step in calculating the static equations of state and forms the basis of thermodynamic property calculations for materials. The task can be formulated as an energy minimization with a determinant constraint. Widely used line minimization-based methods (e.g., conjugate gradient method) lack both efficiency and convergence guarantees due to the nonconvex nature of the feasible region as well as the significant differences in the curvatures of the potential energy surface with respect to atomic and lattice components. To this end, we propose a projected gradient descent algorithm named PANBB. It is equipped with (i) search direction projections onto the tangent spaces of the nonconvex feasible region for lattice vectors, (ii) distinct curvature-aware initial trial step sizes for atomic and lattice updates, and (iii) a nonrestrictive line minimization criterion as the stopping rule for the inner loop. It can be proved that PANBB favors theoretical convergence to equilibrium states. Across a benchmark set containing 223 structures from various categories, PANBB achieves average speedup factors of approximately 1.41 and 1.45 over the conjugate gradient method and direct inversion in the iterative subspace implemented in off-the-shelf simulation software, respectively. Moreover, it normally converges on all the systems, manifesting its unparalleled robustness. As an application, we calculate the static equations of state for the high-entropy alloy AlCoCrFeNi, which remains elusive owing to 160 atoms representing both chemical and magnetic disorder and the strong local lattice distortion. The results are consistent with the previous calculations and are further validated by experimental thermodynamic data."
 }
 </script>
 
@@ -397,7 +397,7 @@
 
 
   
-  <title>Sampling-based methods for multi-block optimization problems over transport polytopes | Yukuan Hu&#39;s Homepage</title>
+  <title>Projected gradient descent algorithm for ab initio crystal structure relaxation under a fixed unit cell volume | Yukuan Hu&#39;s Homepage</title>
 
   
   
@@ -417,7 +417,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="9fd828ba87baaa903c3644028ef22522" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="57a82c82ec7de25b796916a3749d7356" >
 
   
   
@@ -883,7 +883,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Sampling-based methods for multi-block optimization problems over transport polytopes</h1>
+  <h1>Projected gradient descent algorithm for ab initio crystal structure relaxation under a fixed unit cell volume</h1>
 
   
 
@@ -902,9 +902,10 @@
 
   <span class="author-highlighted">
       <b>Y. Hu (胡雨宽)</b></span>, <span >
-      M. Li</span>, <span >
+      J. Yin</span>, <span >
+      X. Gao</span>, <span >
       X. Liu</span>, <span >
-      C. Meng</span>
+      H. Song</span>
   </div>
   
   
@@ -915,7 +916,7 @@
     
       
     
-    March, 2024
+    May, 2024
   </span>
   
 
@@ -956,7 +957,7 @@
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/2023-arxiv-mbotp/cite.bib">
+        data-filename="/publication/2024-arxiv-panbb/cite.bib">
   Cite
 </a>
 
@@ -984,7 +985,7 @@
   
     
   
-  <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/pdf/2306.16763.pdf" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/pdf/2405.02934.pdf" target="_blank" rel="noopener">
     Preprint</a>
 
 
@@ -1002,7 +1003,7 @@
 
     
     <h3>Abstract (in case you want a formal version)</h3>
-    <p class="pub-abstract">This paper focuses on multi-block optimization problems over transport polytopes, which underlie various applications including strongly correlated quantum physics and machine learning. Conventional block coordinate descent-type methods for the general multi-block problems store and operate on the matrix variables directly, resulting in formidable expenditure for large-scale settings. On the other hand, optimal transport problems, as a special case, have attracted extensive attention and numerical techniques that waive the use of the full matrices have recently emerged. However, it remains nontrivial to apply these techniques to the multi-block, possibly nonconvex problems with theoretical guarantees. In this work, we leverage the benefits of both sides and develop novel sampling-based block coordinate descent-type methods, which are equipped with either entropy regularization or Kullback-Leibler divergence. Each iteration of these methods solves subproblems restricted on the sampled degrees of freedom. Consequently, they involve only sparse matrices, which amounts to considerable complexity reductions. We explicitly characterize the sampling-induced errors and establish convergence and asymptotic properties for the methods equipped with the entropy regularization. Numerical experiments on typical strongly correlated electron systems corroborate their superior scalability over the methods utilizing full matrices. The advantage also enables the first visualization of approximate optimal transport maps between electron positions in three-dimensional contexts.</p>
+    <p class="pub-abstract">This paper is concerned with <em>ab initio</em> crystal structure relaxation under a fixed unit cell volume, which is a step in calculating the static equations of state and forms the basis of thermodynamic property calculations for materials. The task can be formulated as an energy minimization with a determinant constraint. Widely used line minimization-based methods (e.g., conjugate gradient method) lack both efficiency and convergence guarantees due to the nonconvex nature of the feasible region as well as the significant differences in the curvatures of the potential energy surface with respect to atomic and lattice components. To this end, we propose a projected gradient descent algorithm named PANBB. It is equipped with (i) search direction projections onto the tangent spaces of the nonconvex feasible region for lattice vectors, (ii) distinct curvature-aware initial trial step sizes for atomic and lattice updates, and (iii) a nonrestrictive line minimization criterion as the stopping rule for the inner loop. It can be proved that PANBB favors theoretical convergence to equilibrium states. Across a benchmark set containing 223 structures from various categories, PANBB achieves average speedup factors of approximately 1.41 and 1.45 over the conjugate gradient method and direct inversion in the iterative subspace implemented in off-the-shelf simulation software, respectively. Moreover, it normally converges on all the systems, manifesting its unparalleled robustness. As an application, we calculate the static equations of state for the high-entropy alloy AlCoCrFeNi, which remains elusive owing to 160 atoms representing both chemical and magnetic disorder and the strong local lattice distortion. The results are consistent with the previous calculations and are further validated by experimental thermodynamic data.</p>
     
 
     
@@ -1030,7 +1031,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9" style="font-family: Georgia, serif;"><em>Mathematics of Computation</em>, 2024+, accepted</div>
+          <div class="col-12 col-md-9" style="font-family: Georgia, serif;">arXiv preprint, 2024, arXiv:2405.02934</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -1065,7 +1066,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2023-arxiv-mbotp%2F&amp;text=Sampling-based&#43;methods&#43;for&#43;multi-block&#43;optimization&#43;problems&#43;over&#43;transport&#43;polytopes" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2024-arxiv-panbb%2F&amp;text=Projected&#43;gradient&#43;descent&#43;algorithm&#43;for&#43;ab&#43;initio&#43;crystal&#43;structure&#43;relaxation&#43;under&#43;a&#43;fixed&#43;unit&#43;cell&#43;volume" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1082,7 +1083,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2023-arxiv-mbotp%2F&amp;t=Sampling-based&#43;methods&#43;for&#43;multi-block&#43;optimization&#43;problems&#43;over&#43;transport&#43;polytopes" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2024-arxiv-panbb%2F&amp;t=Projected&#43;gradient&#43;descent&#43;algorithm&#43;for&#43;ab&#43;initio&#43;crystal&#43;structure&#43;relaxation&#43;under&#43;a&#43;fixed&#43;unit&#43;cell&#43;volume" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1101,7 +1102,7 @@
         
       
       <li>
-        <a href="mailto:?subject=Sampling-based%20methods%20for%20multi-block%20optimization%20problems%20over%20transport%20polytopes&amp;body=https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2023-arxiv-mbotp%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Projected%20gradient%20descent%20algorithm%20for%20ab%20initio%20crystal%20structure%20relaxation%20under%20a%20fixed%20unit%20cell%20volume&amp;body=https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2024-arxiv-panbb%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1118,7 +1119,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2023-arxiv-mbotp%2F&amp;title=Sampling-based&#43;methods&#43;for&#43;multi-block&#43;optimization&#43;problems&#43;over&#43;transport&#43;polytopes" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2024-arxiv-panbb%2F&amp;title=Projected&#43;gradient&#43;descent&#43;algorithm&#43;for&#43;ab&#43;initio&#43;crystal&#43;structure&#43;relaxation&#43;under&#43;a&#43;fixed&#43;unit&#43;cell&#43;volume" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1135,7 +1136,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Sampling-based&#43;methods&#43;for&#43;multi-block&#43;optimization&#43;problems&#43;over&#43;transport&#43;polytopes%20https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2023-arxiv-mbotp%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Projected&#43;gradient&#43;descent&#43;algorithm&#43;for&#43;ab&#43;initio&#43;crystal&#43;structure&#43;relaxation&#43;under&#43;a&#43;fixed&#43;unit&#43;cell&#43;volume%20https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2024-arxiv-panbb%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1152,7 +1153,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2023-arxiv-mbotp%2F&amp;title=Sampling-based&#43;methods&#43;for&#43;multi-block&#43;optimization&#43;problems&#43;over&#43;transport&#43;polytopes" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2024-arxiv-panbb%2F&amp;title=Projected&#43;gradient&#43;descent&#43;algorithm&#43;for&#43;ab&#43;initio&#43;crystal&#43;structure&#43;relaxation&#43;under&#43;a&#43;fixed&#43;unit&#43;cell&#43;volume" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1278,6 +1279,12 @@
 
     </div>
   </div>
+
+
+  
+    
+
+
 
 
   
