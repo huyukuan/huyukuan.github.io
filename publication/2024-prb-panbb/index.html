@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: June 15, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.047268c6dd09ad74ba54a0ba71837064.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.d1074f8af93a3c818e7ddf864bccad0a.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Yukuan Hu (胡雨宽)" />
+
+
+
+
+
+  
+
+<meta name="description" content="This paper is concerned with *ab initio* crystal structure relaxation under a fixed unit cell volume, which is a step in calculating the static equations of state and forms the basis of thermodynamic property calculations for materials. The task can be formulated as an energy minimization with a determinant constraint. Widely used line minimization-based methods (e.g., conjugate gradient method) lack both efficiency and convergence guarantees due to the nonconvex nature of the determinant constraint as well as the significant differences in the curvatures of the potential energy surface with respect to atomic and lattice components. To this end, we propose a projected gradient descent algorithm named PANBB. It is equipped with (i) search direction projections for lattice vectors, (ii) distinct curvature-aware initial trial step sizes for atomic and lattice updates, and (iii) a nonrestrictive line minimization criterion as the stopping rule for the inner loop. It can be proved that PANBB favors theoretical convergence to equilibrium states. Across a benchmark set containing 223 structures from various categories, PANBB achieves average speedup factors of approximately 1.41 and 1.45 over the conjugate gradient method and direct inversion in the iterative subspace implemented in off-the-shelf simulation software, respectively. Moreover, it normally converges on all the systems, manifesting its robustness. As an application, we calculate the static equations of state for the high-entropy alloy AlCoCrFeNi, which remains elusive owing to 160 atoms representing both chemical and magnetic disorder and the strong local lattice distortion. The results are consistent with the previous calculations and are further validated by experimental thermodynamic data." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://huyukuan.github.io/publication/2024-prb-panbb/" />
+<link rel="canonical" href="https://huyukuan.github.io/publication/2024-prb-panbb/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huf7d2ae589d240638b0dc23db94c10dcf_18673_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huf7d2ae589d240638b0dc23db94c10dcf_18673_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@wowchemy" />
+  <meta property="twitter:creator" content="@wowchemy" />
+<meta property="twitter:image" content="https://huyukuan.github.io/media/icon_huf7d2ae589d240638b0dc23db94c10dcf_18673_512x512_fill_lanczos_center_3.png" />
+<meta property="og:site_name" content="Yukuan Hu&#39;s Homepage" />
+<meta property="og:url" content="https://huyukuan.github.io/publication/2024-prb-panbb/" />
+<meta property="og:title" content="Projected gradient descent algorithm for $\textit{ab initio}$ crystal structure relaxation under a fixed unit cell volume | Yukuan Hu&#39;s Homepage" />
+<meta property="og:description" content="This paper is concerned with *ab initio* crystal structure relaxation under a fixed unit cell volume, which is a step in calculating the static equations of state and forms the basis of thermodynamic property calculations for materials. The task can be formulated as an energy minimization with a determinant constraint. Widely used line minimization-based methods (e.g., conjugate gradient method) lack both efficiency and convergence guarantees due to the nonconvex nature of the determinant constraint as well as the significant differences in the curvatures of the potential energy surface with respect to atomic and lattice components. To this end, we propose a projected gradient descent algorithm named PANBB. It is equipped with (i) search direction projections for lattice vectors, (ii) distinct curvature-aware initial trial step sizes for atomic and lattice updates, and (iii) a nonrestrictive line minimization criterion as the stopping rule for the inner loop. It can be proved that PANBB favors theoretical convergence to equilibrium states. Across a benchmark set containing 223 structures from various categories, PANBB achieves average speedup factors of approximately 1.41 and 1.45 over the conjugate gradient method and direct inversion in the iterative subspace implemented in off-the-shelf simulation software, respectively. Moreover, it normally converges on all the systems, manifesting its robustness. As an application, we calculate the static equations of state for the high-entropy alloy AlCoCrFeNi, which remains elusive owing to 160 atoms representing both chemical and magnetic disorder and the strong local lattice distortion. The results are consistent with the previous calculations and are further validated by experimental thermodynamic data." /><meta property="og:image" content="https://huyukuan.github.io/media/icon_huf7d2ae589d240638b0dc23db94c10dcf_18673_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2024-06-15T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2024-06-15T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://huyukuan.github.io/publication/2024-prb-panbb/"
+  },
+  "headline": "Projected gradient descent algorithm for $\\textit{ab initio}$ crystal structure relaxation under a fixed unit cell volume",
+  
+  "datePublished": "2024-06-15T00:00:00Z",
+  "dateModified": "2024-06-15T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Yukuan Hu (胡雨宽)"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yukuan Hu's Homepage",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://huyukuan.github.io/media/icon_huf7d2ae589d240638b0dc23db94c10dcf_18673_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "This paper is concerned with *ab initio* crystal structure relaxation under a fixed unit cell volume, which is a step in calculating the static equations of state and forms the basis of thermodynamic property calculations for materials. The task can be formulated as an energy minimization with a determinant constraint. Widely used line minimization-based methods (e.g., conjugate gradient method) lack both efficiency and convergence guarantees due to the nonconvex nature of the determinant constraint as well as the significant differences in the curvatures of the potential energy surface with respect to atomic and lattice components. To this end, we propose a projected gradient descent algorithm named PANBB. It is equipped with (i) search direction projections for lattice vectors, (ii) distinct curvature-aware initial trial step sizes for atomic and lattice updates, and (iii) a nonrestrictive line minimization criterion as the stopping rule for the inner loop. It can be proved that PANBB favors theoretical convergence to equilibrium states. Across a benchmark set containing 223 structures from various categories, PANBB achieves average speedup factors of approximately 1.41 and 1.45 over the conjugate gradient method and direct inversion in the iterative subspace implemented in off-the-shelf simulation software, respectively. Moreover, it normally converges on all the systems, manifesting its robustness. As an application, we calculate the static equations of state for the high-entropy alloy AlCoCrFeNi, which remains elusive owing to 160 atoms representing both chemical and magnetic disorder and the strong local lattice distortion. The results are consistent with the previous calculations and are further validated by experimental thermodynamic data."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Projected gradient descent algorithm for $\textit{ab initio}$ crystal structure relaxation under a fixed unit cell volume | Yukuan Hu&#39;s Homepage</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="3132d4c809678701ae3c420820e244c4" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.fe8634e7d00f14d07fb33caf14cc8e55.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Yukuan Hu&#39;s Homepage</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Yukuan Hu&#39;s Homepage</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#research"><span>Research</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#patents"><span>Patents</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#awards"><span>Awards</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/uploads/CV_ykhu.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+<div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Projected gradient descent algorithm for $\textit{ab initio}$ crystal structure relaxation under a fixed unit cell volume</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      <b>Y. Hu (胡雨宽)</b></span>, <span >
+      J. Yin</span>, <span >
+      X. Gao</span>, <span >
+      X. Liu</span>, <span >
+      H. Song</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    June, 2024
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
+        data-filename="/publication/2024-prb-panbb/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="https://doi.org/10.1103/PhysRevB.109.224108" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/pdf/2405.02934.pdf" target="_blank" rel="noopener">
+    Preprint</a>
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+    
+    
+
+    
+    <h3>Abstract (in case you want a formal version)</h3>
+    <p class="pub-abstract">This paper is concerned with <em>ab initio</em> crystal structure relaxation under a fixed unit cell volume, which is a step in calculating the static equations of state and forms the basis of thermodynamic property calculations for materials. The task can be formulated as an energy minimization with a determinant constraint. Widely used line minimization-based methods (e.g., conjugate gradient method) lack both efficiency and convergence guarantees due to the nonconvex nature of the determinant constraint as well as the significant differences in the curvatures of the potential energy surface with respect to atomic and lattice components. To this end, we propose a projected gradient descent algorithm named PANBB. It is equipped with (i) search direction projections for lattice vectors, (ii) distinct curvature-aware initial trial step sizes for atomic and lattice updates, and (iii) a nonrestrictive line minimization criterion as the stopping rule for the inner loop. It can be proved that PANBB favors theoretical convergence to equilibrium states. Across a benchmark set containing 223 structures from various categories, PANBB achieves average speedup factors of approximately 1.41 and 1.45 over the conjugate gradient method and direct inversion in the iterative subspace implemented in off-the-shelf simulation software, respectively. Moreover, it normally converges on all the systems, manifesting its robustness. As an application, we calculate the static equations of state for the high-entropy alloy AlCoCrFeNi, which remains elusive owing to 160 atoms representing both chemical and magnetic disorder and the strong local lattice distortion. The results are consistent with the previous calculations and are further validated by experimental thermodynamic data.</p>
+    
+
+    
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            <a href="/publication/#2">
+              Journal article
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9" style="font-family: Georgia, serif;"><em>Physical Review B</em>, 2024, 109(22): 224108</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2024-prb-panbb%2F&amp;text=Projected&#43;gradient&#43;descent&#43;algorithm&#43;for&#43;%24%5Ctextit%7Bab&#43;initio%7D%24&#43;crystal&#43;structure&#43;relaxation&#43;under&#43;a&#43;fixed&#43;unit&#43;cell&#43;volume" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2024-prb-panbb%2F&amp;t=Projected&#43;gradient&#43;descent&#43;algorithm&#43;for&#43;%24%5Ctextit%7Bab&#43;initio%7D%24&#43;crystal&#43;structure&#43;relaxation&#43;under&#43;a&#43;fixed&#43;unit&#43;cell&#43;volume" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Projected%20gradient%20descent%20algorithm%20for%20%24%5Ctextit%7Bab%20initio%7D%24%20crystal%20structure%20relaxation%20under%20a%20fixed%20unit%20cell%20volume&amp;body=https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2024-prb-panbb%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2024-prb-panbb%2F&amp;title=Projected&#43;gradient&#43;descent&#43;algorithm&#43;for&#43;%24%5Ctextit%7Bab&#43;initio%7D%24&#43;crystal&#43;structure&#43;relaxation&#43;under&#43;a&#43;fixed&#43;unit&#43;cell&#43;volume" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Projected&#43;gradient&#43;descent&#43;algorithm&#43;for&#43;%24%5Ctextit%7Bab&#43;initio%7D%24&#43;crystal&#43;structure&#43;relaxation&#43;under&#43;a&#43;fixed&#43;unit&#43;cell&#43;volume%20https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2024-prb-panbb%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fhuyukuan.github.io%2Fpublication%2F2024-prb-panbb%2F&amp;title=Projected&#43;gradient&#43;descent&#43;algorithm&#43;for&#43;%24%5Ctextit%7Bab&#43;initio%7D%24&#43;crystal&#43;structure&#43;relaxation&#43;under&#43;a&#43;fixed&#43;unit&#43;cell&#43;volume" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://huyukuan.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hud842df2f900d84499d52ea54239a246f_4380228_3072x3072_fill_q75_lanczos_center.jpg" alt="Yukuan Hu (胡雨宽)"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://huyukuan.github.io/">Yukuan Hu (胡雨宽)</a></h5>
+      <h6 class="card-subtitle">Ph.D. Candidate</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://huyukuan.github.io/#contact" target="_blank" rel="noopener">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=e5AbKb8AAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/my-orcid?orcid=0000-0002-5372-3814" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Yukuan-Hu" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/huyukuan" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <head><style>
+   .container {
+     display: flex;
+     align-items: center;
+     justify-content: center
+   }
+   img {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+   }
+  </style></head>
+
+  <div class="container">
+    <div class="image">
+      
+      <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=e3e3e3&w=300&t=tt&d=XCnIHVasm_I8HKTBb8oaxmB_0427_1d_cZcmnY3raVU&co=ffffff&cmo=538dff&cmn=f00b0b&ct=000000"></script> 
+    </div>
+    
+  </div>
+
+  <div class="container">
+    <div class="powered-by copyright-license-text">
+      Since Nov. 22, 2023
+    </div><br>
+  </div>
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2023&ndash;present by Yukuan Hu. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    
+  </p>
+
+
+
+
+
+  
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.3322c0d94f0e691b0b24c63f4c41064b.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
