@@ -279,7 +279,7 @@
 
   
 
-<meta name="description" content="Atomistic simulation sets the basis and computational bottleneck in high-througput materials design, phase diagram calculations, etc. Following molecular statics, my collaborators and I formulate the related optimization problems with physical constraints and develop globally convergent algorithms and robust packages." />
+<meta name="description" content="Atomistic simulation forms the foundation and computational bottleneck in high-throughput materials design, phase diagram calculations, and more. Following molecular statics, my collaborators and I formulate the related optimization problems with physical constraints and develop globally convergent algorithms and reliable packages." />
 
 
 
@@ -320,8 +320,8 @@
 <meta property="twitter:image" content="https://huyukuan.github.io/research/atomistic-simulation/featured.png" />
 <meta property="og:site_name" content="Yukuan Hu&#39;s Homepage" />
 <meta property="og:url" content="https://huyukuan.github.io/research/atomistic-simulation/" />
-<meta property="og:title" content="Optimization for atomistic simulation | Yukuan Hu&#39;s Homepage" />
-<meta property="og:description" content="Atomistic simulation sets the basis and computational bottleneck in high-througput materials design, phase diagram calculations, etc. Following molecular statics, my collaborators and I formulate the related optimization problems with physical constraints and develop globally convergent algorithms and robust packages." /><meta property="og:image" content="https://huyukuan.github.io/research/atomistic-simulation/featured.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:title" content="Optimization for Atomistic Simulation | Yukuan Hu&#39;s Homepage" />
+<meta property="og:description" content="Atomistic simulation forms the foundation and computational bottleneck in high-throughput materials design, phase diagram calculations, and more. Following molecular statics, my collaborators and I formulate the related optimization problems with physical constraints and develop globally convergent algorithms and reliable packages." /><meta property="og:image" content="https://huyukuan.github.io/research/atomistic-simulation/featured.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
@@ -330,7 +330,7 @@
     />
   
   
-    <meta property="article:modified_time" content="2023-10-22T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2024-06-30T00:00:00&#43;00:00">
   
 
 
@@ -355,7 +355,7 @@
 
 
   
-  <title>Optimization for atomistic simulation | Yukuan Hu&#39;s Homepage</title>
+  <title>Optimization for Atomistic Simulation | Yukuan Hu&#39;s Homepage</title>
 
   
   
@@ -832,7 +832,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Optimization for atomistic simulation</h1>
+  <h1>Optimization for Atomistic Simulation</h1>
 
   
 
@@ -853,7 +853,7 @@
           Last updated on
       
     
-    Oct 22, 2023
+    Jun 30, 2024
   </span>
   
 
@@ -890,58 +890,57 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>Nowadays, people adopt atomistic simulation to elucidate the mechanisms of experimentally known phenomena and to develop new materials by analyzing elemental combinations and structures. Building on <em>ab-initio</em> or (semi-)empirical force fields, atomistic simulation models materials at the level of atoms and seeks equilibrium states (including saddle points) and transition paths over the potential energy surface. One of the most fundamental tasks for these purposes goes to structure relaxation (also known as structure/geometry optimization)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
-<p>Structure relaxation can be formulated as an optimization problem in atomic positions (and also lattice vectors, if you consider crystals). Conventional methods are conjugate gradient methods (CG<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>) and quasi-Newton methods (QN<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>), as seen in the off-the-shelf materials simulation software. From the practical aspect, CG favors better robustness but is unsatisfactory in efficiency, while QN converges fast only around local minima. In theory, both these two lack global convergence guarantees, particularly when physical constraints are present. The physical constraints, however, are of significance in reducing the dimensionality of the configurational space and can be found in various downstream applications.</p>
-<p>Regarding structure relaxation, my interests basically concern with <strong>developing computationally efficient and theoretically convergent optimization methods catering for various applications</strong>. Currently, my collaborators and I mainly work on</p>
+      <p>Nowadays, atomistic simulation is widely used to elucidate the mechanisms of experimentally known phenomena and to develop new materials by analyzing elemental combinations and structures. Building on ab initio or (semi-)empirical force fields, atomistic simulation models materials at the atomic level, seeking equilibrium states (including saddle points) and transition paths over the potential energy surface. One of the most fundamental tasks in this domain is structure relaxation (also known as structure/geometry optimization)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>Structure relaxation can be formulated as an optimization problem in terms of atomic positions (and lattice vectors, if considering crystals). Conventional methods include conjugate gradient methods (CG)<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> and quasi-Newton methods (QN)<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, commonly found in off-the-shelf materials simulation software. Practically, CG offers better robustness but <strong>lacks efficiency</strong>, while QN converges quickly <strong>only near local minima</strong>. Theoretically, <strong>both lack global convergence guarantees</strong>, especially when physical constraints are present. These constraints are significant in reducing the dimensionality of the configurational space and are relevant in various downstream applications.</p>
+<p>Regarding structure relaxation, my interests basically concern with <strong>developing computationally efficient and theoretically convergent optimization methods catering for various applications</strong>. Currently, my collaborators and I are primarily working on:</p>
 <ul>
-<li>crystal structure relaxation under physical constraints.</li>
+<li>Crystal structure relaxation under physical constraints.</li>
 </ul>
-<p>By the way, I also pay attention to the effect of inexact oracles (or error propagation) on structure relaxation.</p>
+<!--By the way, I also pay attention to the effect of inexact oracles (or error propagation) on structure relaxation. -->
 <h3 id="a-idcrystal-structure-relaxation-under-physical-constraintscrystal-structure-relaxation-under-physical-constraintsa"><a id="crystal-structure-relaxation-under-physical-constraints"><strong>Crystal structure relaxation under physical constraints</strong></a></h3>
-<p><strong>Collaborators:</strong></p>
+<p><strong>Collaborators (in the alphabetic order):</strong></p>
 <ul>
 <li><a href="http://www.iapcm.ac.cn/teaching_detail_103.html" target="_blank" rel="noopener">Xingyu Gao</a> (China Academy of Engineering Physics);</li>
 <li><a href="http://lsec.cc.ac.cn/~liuxin/" target="_blank" rel="noopener">Xin Liu</a> (Chinese Academy of Sciences);</li>
 <li><a href="http://www.iapcm.ac.cn/teaching_detail_136.html" target="_blank" rel="noopener">Haifeng Song</a> (China Academy of Engineering Physics);</li>
-<li>Yafan Zhao (China Academy of Engineering Physics);</li>
-<li>Xin Chen (China Academy of Engineering Physics);</li>
-<li>Junlei Yin (Northwest Polytechnical University);</li>
 <li>Zhen Yang (University of Science and Technology Beijing).</li>
+<li>Junlei Yin (Northwest Polytechnical University);</li>
+<li>Yafan Zhao (China Academy of Engineering Physics);</li>
 </ul>
-<p>We consider requirements from several contexts, encompassing relaxation</p>
+<p>We address requirements from several contexts, encompassing relaxation</p>
 <ol>
 <li>with fixed lattice vectors;</li>
-<li>with fixed unit cell volumes;</li>
-<li>under given external pressures.</li>
+<li>with a fixed unit cell volume;</li>
+<li>under a given external pressure.</li>
 </ol>
-<p>Notably, (2) is frequently seen in the calculations of the equations of state as well as material response functions, (3) finds itself in structure searches under high external pressures. Mathematically, (2) corresponds to a nonconvex determinant constrained problem, to which little attention has been paid from the optimization community.</p>
-<p>Our works largely improve the execution of the line minimization process, in which CG can easily get trapped. Roughly speaking, the developed methods imitate the Newton method by exploiting the curvature of the potential energy surface, yet with computational costs in line with that of CG. The overall convergence is ensured by an improved nonmonotone stopping rule for the line minimization process. <strong>Across a benchmark set with good universality, our methods achieve over 50% speedup against CG without any failure.</strong></p>
-<p><font color=#D64D8A><em>We have developed a suite called</em> &ldquo;ProMe-SuRe&rdquo; <em>for crystal structure relaxation with the above functions realized. The suite can be interfaced to some off-the-shelf materials simulation package. Static-link library files are available upon request!</em></font></p>
+<p>Notably, (2) is frequently seen in the calculations of the equations of state as well as material response functions, (3) finds itself in structure searches under high external pressures. Mathematically, (2) corresponds to a nonconvex determinant constrained problem, which has received little attention from the optimization community.</p>
+<p>Our works significantly improve the execution of the line minimization process, where CG can easily get trapped. Our developed methods imitate the Newton method by exploiting the curvature of the potential energy surface, yet maintain single-step computational costs similar to CG. Additionally, to handle nonconvex constraints, we incorporate search direction projections onto the tangent cones of the feasible set. The overall convergence is ensured by an improved nonmonotone stopping rule for the line minimization process. <strong>Across a benchmark set containing over 200 structures with good universality, our methods achieve over 40% speedup compared to CG, without any failures.</strong></p>
+<p><font color=#D64D8A><em>We have developed a suite called</em> &ldquo;ProME-SuRe&rdquo; <em>for crystal structure relaxation with the above functionalities. The suite can interface with some off-the-shelf materials simulation packages. Static-link library files are available upon request!</em></font></p>
 <p><strong>References</strong></p>
 <ul>
 <li>
-<p>Y. Hu, X. Gao, Y. Zhao, X. Liu, and H. Song. Force-based gradient descent method for <em>ab initio</em> atomic structure relaxation. <font face="Times New Roman"><em>Physical Review B</em></font>, 2022, 106(10): 104101. (<a href="https://doi.org/10.1103/PhysRevB.106.104101" target="_blank" rel="noopener">link</a>)</p>
+<p><strong>H.</strong>, X. Gao, Y. Zhao, X. Liu, and H. Song. Force-based gradient descent method for <em>ab initio</em> atomic structure relaxation. <font face="Times New Roman"><em>Physical Review B</em></font>, 2022, 106(10): 104101. (<a href="https://doi.org/10.1103/PhysRevB.106.104101" target="_blank" rel="noopener">link</a>)</p>
 </li>
 <li>
-<p>Y. Hu, J. Yin, X. Gao, X. Liu, and H. Song. Projected gradient descent algorithm for <em>ab initio</em> crystal structure relaxation under a fixed unit cell volume. <font face="Times New Roman">arXiv preprint</font>, 2024, arXiv:2405.02934.</p>
+<p><strong>H.</strong>, J. Yin, X. Gao, X. Liu, and H. Song. Projected gradient descent algorithm for <em>ab initio</em> crystal structure relaxation under a fixed unit cell volume. <font face="Times New Roman"><em>Physical Review B</em></font>, 2024, 109(22): 224108. (<a href="https://doi.org/10.1103/PhysRevB.109.224108" target="_blank" rel="noopener">link</a>)</p>
 </li>
 </ul>
-<p><strong>Patents and Copyrights</strong></p>
+<p><strong>Patents and copyrights</strong></p>
 <ul>
 <li>
-<p>X. Gao, X. Liu, Y. Hu, H. Song, X. Chen, Y. Wang, and L. Wang. 晶体结构弛豫软件包 ProMe-SuRe. <font face="Times New Roman"><em>CN Software Copyright</em></font>, 2023, 2023SR1558824.</p>
+<p>X. Gao, X. Liu, <strong>H.</strong>, H. Song, X. Chen, Y. Wang, and L. Wang. 晶体结构弛豫软件包 ProMe-SuRe. <font face="Times New Roman"><em>CN Software Copyright</em></font>, 2023, 2023SR1558824.</p>
 </li>
 <li>
-<p>X. Gao, X. Liu, H. Song, Y. Hu, X. Chen, Y. Wang, J. Fang, L. Wang, and L. Zhang. 固定晶格体积晶体结构弛豫的计算方法及装置. <font face="Times New Roman"><em>CN Patent</em></font>, 2023, ZL 202211210741.3.</p>
+<p>X. Gao, X. Liu, H. Song, <strong>H.</strong>, X. Chen, Y. Wang, J. Fang, L. Wang, and L. Zhang. 固定晶格体积晶体结构弛豫的计算方法及装置. <font face="Times New Roman"><em>CN Patent</em></font>, 2023, ZL 202211210741.3.</p>
 </li>
 <li>
-<p>X. Gao, X. Liu, H. Song, Y. Hu, J. Fang, Z. Yang, Y. Zhao, L. Wang, and H. Liu. 原子结构弛豫的非单调线搜索方法及装置. <font face="Times New Roman"><em>CN Patent</em></font>, 2022, ZL 202111534901.5.</p>
+<p>X. Gao, X. Liu, H. Song, <strong>H.</strong>, J. Fang, Z. Yang, Y. Zhao, L. Wang, and H. Liu. 原子结构弛豫的非单调线搜索方法及装置. <font face="Times New Roman"><em>CN Patent</em></font>, 2022, ZL 202111534901.5.</p>
 </li>
 </ul>
 <p><strong>Ongoing works</strong></p>
 <ul>
-<li>Optimization methods for crystal structure relaxation that preserve symmetry.</li>
-<li>Analysis for error propagation on structure relaxation.</li>
+<li>Optimization methods for crystal structure relaxation with spacegroup symmetry constraints.</li>
+<li>Error propagation analysis on structure relaxation.</li>
 </ul>
 <div class="footnotes" role="doc-endnotes">
 <hr>
@@ -983,7 +982,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Fatomistic-simulation%2F&amp;text=Optimization&#43;for&#43;atomistic&#43;simulation" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Fatomistic-simulation%2F&amp;text=Optimization&#43;for&#43;Atomistic&#43;Simulation" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1000,7 +999,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Fatomistic-simulation%2F&amp;t=Optimization&#43;for&#43;atomistic&#43;simulation" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Fatomistic-simulation%2F&amp;t=Optimization&#43;for&#43;Atomistic&#43;Simulation" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1019,7 +1018,7 @@
         
       
       <li>
-        <a href="mailto:?subject=Optimization%20for%20atomistic%20simulation&amp;body=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Fatomistic-simulation%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Optimization%20for%20Atomistic%20Simulation&amp;body=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Fatomistic-simulation%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1036,7 +1035,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Fatomistic-simulation%2F&amp;title=Optimization&#43;for&#43;atomistic&#43;simulation" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Fatomistic-simulation%2F&amp;title=Optimization&#43;for&#43;Atomistic&#43;Simulation" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1053,7 +1052,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Optimization&#43;for&#43;atomistic&#43;simulation%20https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Fatomistic-simulation%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Optimization&#43;for&#43;Atomistic&#43;Simulation%20https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Fatomistic-simulation%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1070,7 +1069,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Fatomistic-simulation%2F&amp;title=Optimization&#43;for&#43;atomistic&#43;simulation" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Fatomistic-simulation%2F&amp;title=Optimization&#43;for&#43;Atomistic&#43;Simulation" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>

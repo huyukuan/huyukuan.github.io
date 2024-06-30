@@ -279,7 +279,7 @@
 
   
 
-<meta name="description" content="With broad and crucial applications though, strongly correlated electron systems are the famous examples where the Kohn-Sham density functional theory equipped with widely used approximations on exchange-correlation functional induces non-negligible systematic errors. My collaborators and I have been devoted to investigating other formulations that well describe the behavior of electrons in this setting and developing numerical approaches for the associated optimization problems." />
+<meta name="description" content="Despite their broad and crucial applications, strongly correlated electron systems are well-known for presenting significant challenges when using Kohn-Sham density functional theory with the existing exchange-correlation functional approximations, often resulting in non-negligible systematic errors. My collaborators and I have dedicated our efforts to exploring alternative formulations that more accurately describe electron behavior in these systems, and to developing numerical methods for the associated optimization problems." />
 
 
 
@@ -320,8 +320,8 @@
 <meta property="twitter:image" content="https://huyukuan.github.io/research/electronic-structure-calculations/featured.png" />
 <meta property="og:site_name" content="Yukuan Hu&#39;s Homepage" />
 <meta property="og:url" content="https://huyukuan.github.io/research/electronic-structure-calculations/" />
-<meta property="og:title" content="Electronic structure calculations for strongly correlated electron systems | Yukuan Hu&#39;s Homepage" />
-<meta property="og:description" content="With broad and crucial applications though, strongly correlated electron systems are the famous examples where the Kohn-Sham density functional theory equipped with widely used approximations on exchange-correlation functional induces non-negligible systematic errors. My collaborators and I have been devoted to investigating other formulations that well describe the behavior of electrons in this setting and developing numerical approaches for the associated optimization problems." /><meta property="og:image" content="https://huyukuan.github.io/research/electronic-structure-calculations/featured.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:title" content="Electronic Structure Calculations for Strongly Correlated Electron Systems | Yukuan Hu&#39;s Homepage" />
+<meta property="og:description" content="Despite their broad and crucial applications, strongly correlated electron systems are well-known for presenting significant challenges when using Kohn-Sham density functional theory with the existing exchange-correlation functional approximations, often resulting in non-negligible systematic errors. My collaborators and I have dedicated our efforts to exploring alternative formulations that more accurately describe electron behavior in these systems, and to developing numerical methods for the associated optimization problems." /><meta property="og:image" content="https://huyukuan.github.io/research/electronic-structure-calculations/featured.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
@@ -330,7 +330,7 @@
     />
   
   
-    <meta property="article:modified_time" content="2024-06-29T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2024-06-30T00:00:00&#43;00:00">
   
 
 
@@ -355,7 +355,7 @@
 
 
   
-  <title>Electronic structure calculations for strongly correlated electron systems | Yukuan Hu&#39;s Homepage</title>
+  <title>Electronic Structure Calculations for Strongly Correlated Electron Systems | Yukuan Hu&#39;s Homepage</title>
 
   
   
@@ -832,7 +832,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Electronic structure calculations for strongly correlated electron systems</h1>
+  <h1>Electronic Structure Calculations for Strongly Correlated Electron Systems</h1>
 
   
 
@@ -853,7 +853,7 @@
           Last updated on
       
     
-    Jun 29, 2024
+    Jun 30, 2024
   </span>
   
 
@@ -890,53 +890,53 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>According to the celebrated density functional theory<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, the ground state of a many-electron system can be determined by the single-particle density, eliminating the curse of dimensionality in principle. The variational argument leads to a universal functional comprising of kinetic and electron-electron interaction contributions, yet lacking a tractable expression.</p>
-<p>The popular Kohn-Sham (KS) density functional theory<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> takes a non-interacting reference system and lays emphasis on approximating the kinetic contribution. On account of this starting point, <strong>the KS model can fail to capture the true things for strongly correlated systems</strong> where the interaction energy dominates, even with the state-of-the-art exchange-correlation functionals<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Since strongly correlated materials find <strong>broad applications</strong> (e.g., high-temperature superconductivity, thermoelectric materials, and magnetic storage), new mathematical models and approaches are in an urgent need.</p>
-<p>So far, a plethora of models have been constantly emerging, where the issue of high dimensionality often underlies. My interests revolve around <strong>analyzing their theoretical properties and developing scalable numerical approaches</strong>. At this moment, my collaborators and I mainly work on</p>
+      <p>According to the celebrated density functional theory (DFT)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, the ground state of a many-electron system can be determined by the single-particle density, effectively eliminating the curse of dimensionality in principle. The variational argument leads to the universal Levy-Lieb functional, comprising both kinetic and electron-electron interaction contributions, yet <strong>lacking a tractable expression</strong>.</p>
+<p>The popular Kohn-Sham DFT (KSDFT)<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> uses a non-interacting reference system and focuses on approximating the kinetic contribution. The approximation error for the Levy-Lieb functional is called the exchange-correlation functional, which has no closed-form expression. Because of its starting point, <strong>KSDFT can fail to accurately capture the behavior of strongly correlated electron systems</strong>, where interaction energy dominates, even with state-of-the-art approximations of exchange-correlation functionals<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Since strongly correlated materials have broad applications (e.g., high-temperature superconductivity, thermoelectric materials, and magnetic storage), alternative models and numerical approaches are urgently needed.</p>
+<p>A plethora of models have emerged, often contending with the curse of dimensionality. My interests revolve around <strong>analyzing their theoretical properties and developing scalable numerical approaches</strong>. Currently, my collaborators and I are primarily working on:</p>
 <ul>
 <li>
-<p>strictly-correlated-electrons density functional theory<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>;</p>
+<p>Strictly-correlated-electrons density functional theory<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
 </li>
 <li>
-<p>variational Monte Carlo methods<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+<p>Variational Monte Carlo methods<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
 </li>
 </ul>
 <h3 id="a-idstrictly-correlated-electrons-density-functional-theorystrictly-correlated-electrons-density-functional-theorya"><a id="strictly-correlated-electrons-density-functional-theory"><strong>Strictly-correlated-electrons density functional theory</strong></a></h3>
-<p><strong>Collaborators:</strong></p>
+<p><strong>Collaborators (in the alphabetic order):</strong></p>
 <ul>
 <li><a href="http://math0.bnu.edu.cn/~chenhuajie/" target="_blank" rel="noopener">Huajie Chen</a> (Beijing Normal University);</li>
-<li><a href="http://lsec.cc.ac.cn/~liuxin/" target="_blank" rel="noopener">Xin Liu</a> (Chinese Academy of Sciences);</li>
 <li><a href="https://mengyu8042.github.io" target="_blank" rel="noopener">Mengyu Li</a> (Renmin University of China);</li>
+<li><a href="http://lsec.cc.ac.cn/~liuxin/" target="_blank" rel="noopener">Xin Liu</a> (Chinese Academy of Sciences);</li>
 <li><a href="https://chengzijunaixiaoli.github.io" target="_blank" rel="noopener">Cheng Meng</a> (Renmin University of China).</li>
 </ul>
-<p>This model runs from the opposite face of the KS model and builds on a multimarginal optimal transport problem with Coulomb cost (MMOT). Leveraging a low-dimensional ansatz for the square modulus of wave function $|\Psi|^2$, which takes roots in optimal transport and encodes two-electron couplings, one could derive a nonconvex reformulation for the MMOT. The number of unknowns therein scales linearly with respect to the number of electrons. Due to the intricacies of the nonconvex problem, existing works in this aspect consider systems with only two electrons.</p>
-<p>Our contributions:</p>
+<p>This model runs from the opposite face of KSDFT and builds on a multimarginal optimal transport problem with Coulomb cost (MMOT). Leveraging a low-dimensional ansatz for the square modulus of wave function $|\Psi|^2$, which takes roots in optimal transport and encodes two-electron couplings, one could derive a nonconvex reformulation for the MMOT. The number of unknowns therein scales linearly with respect to the number of electrons. Due to the intricacies of the nonconvex problem, existing works in this aspect consider systems with only two electrons.</p>
+<p>Our contributions include:</p>
 <ul>
-<li><strong>establish the theoretical properties of the nonconvex formulation.</strong> Violating conventional constraint qualifications, the nonconvex formulation (denoted by (P)) itself is not appropriate for numerical resolution. Without extra assumptions in the literature, we establish the equivalence between (P) and a nonconvex quadratic programming (denoted by (P&rsquo;)). Interestingly, we numerically observe that (P&rsquo;) is &ldquo;nearly&rdquo; amenable to any local solvers;<p><br></p></li>
-<li><strong>propose a global optimization framework trading off accuracy and efficiency.</strong> Enlightened by the idea of multigrid methods and optimal transport, we starts with solving (P&rsquo;) globally over a coarse mesh and proceeds with merely local solvers for (P&rsquo;) over finer meshes. The local solvers are fed with initial points constructed from the previous solutions. In simulations, electron positions mappings are first visualized in two/three-dimensional contexts; <p><br></p></li>
-<li><strong>devise sampling-based methods as local solvers without cubic complexities.</strong> To alleviate the cubic computational burden in gradient calculations, we adopt Kullback-Leibler divergence and incorporate importance sampling-based matrix sparsification into iterative schemes. The resulted methods do not store and operate on dense matrices at all. Compared with conventional stochastic algorithms, our methods add randomness to constraints in essence. <p><br></p></li>
-<li><strong>provide the first convergence results for the local solvers under realizable conditions.</strong> For better efficiency, the involved local solvers may invoke infeasible methods for subproblems. With infeasible iterates, the nonmonotonicity of objective values is inevitable, complicating the convergence analyses. Unlike the existing works, we show the convergence under realizable conditions. Novel convergence rates are also derived.</li>
+<li><strong>Establishing the theoretical properties of the nonconvex formulation.</strong> The nonconvex formulation (denoted as (P)) is not suitable for numerical resolution due to violating conventional constraint qualifications. We establish the equivalence between (P) and a nonconvex quadratic programming (denoted as (P&rsquo;)) without additional assumptions from the literature. Interestingly, we numerically observe that (P&rsquo;) is &ldquo;nearly&rdquo; amenable to any local solvers.<p><br></p></li>
+<li><strong>Proposing a multigrid optimization framework balancing accuracy and efficiency.</strong> Inspired by the multigrid methods and optimal transport, we starts with solving (P&rsquo;) accurately over a coarse mesh and proceeds with local solvers for (P&rsquo;) over finer meshes. The local solvers are fed with initial points constructed from the previous solutions. In simulations, electron positions mappings are first visualized in two/three-dimensional contexts. <p><br></p></li>
+<li><strong>Devising sampling-based methods as local solvers without cubic complexities.</strong> To reduce the cubic computational burden in gradient calculations, we adopt Kullback-Leibler divergence and incorporate importance sampling-based matrix sparsification into iterative schemes. These methods avoid storing and operating on dense matrices. Compared with conventional stochastic algorithms, our methods add randomness to constraints. <p><br></p></li>
+<li><strong>Providing the first convergence results for the local solvers under realizable conditions.</strong> To enhance efficiency, local solvers may use infeasible methods for subproblems. With infeasible iterates, nonmonotonicity of objective values is inevitable, complicating convergence analyses. Unlike existing works, we demonstrate convergence under realizable conditions and derive novel convergence rates.</li>
 </ul>
-<p><strong>References</strong></p>
+<p><strong>List of publications</strong></p>
 <ol>
 <li>
-<p>Y. Hu, H. Chen, and X. Liu. A global optimization approach for multimarginal optimal transport problems with Coulomb cost. <font face="Times New Roman"><em>SIAM Journal on Scientific Computing</em></font>, 2023, 45(3): A1214-A1238. (<a href="https://doi.org/10.1137/21M1455164" target="_blank" rel="noopener">link</a>)</p>
+<p><strong>H.</strong>, H. Chen, and X. Liu. A global optimization approach for multimarginal optimal transport problems with Coulomb cost. <font face="Times New Roman"><em>SIAM Journal on Scientific Computing</em></font>, 2023, 45(3): A1214-A1238. (<a href="https://doi.org/10.1137/21M1455164" target="_blank" rel="noopener">link</a>)</p>
 </li>
 <li>
-<p>Y. Hu and X. Liu. The convergence properties of infeasible inexact proximal alternating linearized minimization. <font face="Times New Roman"><em>Science China Mathematics</em></font>, 2023, 66(10): 2385-2410. (<a href="https://doi.org/10.1007/s11425-022-2074-7" target="_blank" rel="noopener">link</a>)</p>
+<p><strong>H.</strong> and X. Liu. The convergence properties of infeasible inexact proximal alternating linearized minimization. <font face="Times New Roman"><em>Science China Mathematics</em></font>, 2023, 66(10): 2385-2410. (<a href="https://doi.org/10.1007/s11425-022-2074-7" target="_blank" rel="noopener">link</a>)</p>
 </li>
 <li>
-<p>Y. Hu and X. Liu. The exactness of the $\ell_1$ penalty function for a class of mathematical programs with generalized complementarity constraints. <font face="Times New Roman"><em>Fundamental Research</em></font>, available online. (<a href="https://doi.org/10.1016/j.fmre.2023.04.006" target="_blank" rel="noopener">link</a>)</p>
+<p><strong>H.</strong> and X. Liu. The exactness of the $\ell_1$ penalty function for a class of mathematical programs with generalized complementarity constraints. <font face="Times New Roman"><em>Fundamental Research</em></font>, published online. DOI: 10.1016/j.fmre.2023.04.006. (<a href="https://doi.org/10.1016/j.fmre.2023.04.006" target="_blank" rel="noopener">link</a>)</p>
 </li>
 <li>
-<p>Y. Hu, M. Li, X. Liu, and C. Meng. Sampling-based methods for multi-block optimization problems over transport polytopes. <font face="Times New Roman">arXiv preprint</font>, arXiv: 2306.16763. (<a href="https://arxiv.org/pdf/2306.16763.pdf" target="_blank" rel="noopener">link</a>)</p>
+<p><strong>H.</strong>, M. Li, X. Liu, and C. Meng. Sampling-based methods for multi-block optimization problems over transport polytopes. <font face="Times New Roman"><em>Mathematics of Computation</em></font>, 2024+, accepted. (<a href="https://arxiv.org/pdf/2306.16763.pdf" target="_blank" rel="noopener">link</a>)</p>
 </li>
 </ol>
 <p><strong>Ongoing works</strong></p>
 <ul>
-<li>Local solvers with nice scaling with respect to the number of electrons and discretization size.</li>
+<li>Local solvers with better scaling with respect to the number of electrons and discretization size.</li>
 <li>Landscape analysis for the nonconvex reformulation of the MMOT.</li>
-<li>Convergence analysis for the global optimization framework.</li>
+<li>Convergence analysis for the multigrid optimization framework.</li>
 <li>Numerical approaches for the other reformulations of the MMOT.</li>
 </ul>
 <div class="footnotes" role="doc-endnotes">
@@ -952,7 +952,7 @@
 <p><a href="https://www.science.org/doi/abs/10.1126/science.1158722" target="_blank" rel="noopener">https://www.science.org/doi/abs/10.1126/science.1158722</a>.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4">
-<p><a href="https://link.springer.com/chapter/10.1007/978-3-031-22340-2_4" target="_blank" rel="noopener">https://link.springer.com/chapter/10.1007/978-3-031-22340-2_4</a>.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Strictly-Correlated-Electrons_density_functional_theory" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Strictly-Correlated-Electrons_density_functional_theory</a>.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5">
 <p><a href="https://en.wikipedia.org/wiki/Variational_Monte_Carlo" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Variational_Monte_Carlo</a>.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
@@ -985,7 +985,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Felectronic-structure-calculations%2F&amp;text=Electronic&#43;structure&#43;calculations&#43;for&#43;strongly&#43;correlated&#43;electron&#43;systems" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Felectronic-structure-calculations%2F&amp;text=Electronic&#43;Structure&#43;Calculations&#43;for&#43;Strongly&#43;Correlated&#43;Electron&#43;Systems" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1002,7 +1002,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Felectronic-structure-calculations%2F&amp;t=Electronic&#43;structure&#43;calculations&#43;for&#43;strongly&#43;correlated&#43;electron&#43;systems" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Felectronic-structure-calculations%2F&amp;t=Electronic&#43;Structure&#43;Calculations&#43;for&#43;Strongly&#43;Correlated&#43;Electron&#43;Systems" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1021,7 +1021,7 @@
         
       
       <li>
-        <a href="mailto:?subject=Electronic%20structure%20calculations%20for%20strongly%20correlated%20electron%20systems&amp;body=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Felectronic-structure-calculations%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Electronic%20Structure%20Calculations%20for%20Strongly%20Correlated%20Electron%20Systems&amp;body=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Felectronic-structure-calculations%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1038,7 +1038,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Felectronic-structure-calculations%2F&amp;title=Electronic&#43;structure&#43;calculations&#43;for&#43;strongly&#43;correlated&#43;electron&#43;systems" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Felectronic-structure-calculations%2F&amp;title=Electronic&#43;Structure&#43;Calculations&#43;for&#43;Strongly&#43;Correlated&#43;Electron&#43;Systems" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1055,7 +1055,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Electronic&#43;structure&#43;calculations&#43;for&#43;strongly&#43;correlated&#43;electron&#43;systems%20https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Felectronic-structure-calculations%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Electronic&#43;Structure&#43;Calculations&#43;for&#43;Strongly&#43;Correlated&#43;Electron&#43;Systems%20https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Felectronic-structure-calculations%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1072,7 +1072,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Felectronic-structure-calculations%2F&amp;title=Electronic&#43;structure&#43;calculations&#43;for&#43;strongly&#43;correlated&#43;electron&#43;systems" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fhuyukuan.github.io%2Fresearch%2Felectronic-structure-calculations%2F&amp;title=Electronic&#43;Structure&#43;Calculations&#43;for&#43;Strongly&#43;Correlated&#43;Electron&#43;Systems" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>

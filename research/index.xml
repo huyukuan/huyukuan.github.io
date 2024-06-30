@@ -13,62 +13,61 @@
     </image>
     
     <item>
-      <title>Optimization for atomistic simulation</title>
+      <title>Optimization for Atomistic Simulation</title>
       <link>https://huyukuan.github.io/research/atomistic-simulation/</link>
       <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://huyukuan.github.io/research/atomistic-simulation/</guid>
-      <description>&lt;p&gt;Nowadays, people adopt atomistic simulation to elucidate the mechanisms of experimentally known phenomena and to develop new materials by analyzing elemental combinations and structures. Building on &lt;em&gt;ab-initio&lt;/em&gt; or (semi-)empirical force fields, atomistic simulation models materials at the level of atoms and seeks equilibrium states (including saddle points) and transition paths over the potential energy surface. One of the most fundamental tasks for these purposes goes to structure relaxation (also known as structure/geometry optimization)&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;p&gt;Structure relaxation can be formulated as an optimization problem in atomic positions (and also lattice vectors, if you consider crystals). Conventional methods are conjugate gradient methods (CG&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;) and quasi-Newton methods (QN&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;), as seen in the off-the-shelf materials simulation software. From the practical aspect, CG favors better robustness but is unsatisfactory in efficiency, while QN converges fast only around local minima. In theory, both these two lack global convergence guarantees, particularly when physical constraints are present. The physical constraints, however, are of significance in reducing the dimensionality of the configurational space and can be found in various downstream applications.&lt;/p&gt;
-&lt;p&gt;Regarding structure relaxation, my interests basically concern with &lt;strong&gt;developing computationally efficient and theoretically convergent optimization methods catering for various applications&lt;/strong&gt;. Currently, my collaborators and I mainly work on&lt;/p&gt;
+      <description>&lt;p&gt;Nowadays, atomistic simulation is widely used to elucidate the mechanisms of experimentally known phenomena and to develop new materials by analyzing elemental combinations and structures. Building on ab initio or (semi-)empirical force fields, atomistic simulation models materials at the atomic level, seeking equilibrium states (including saddle points) and transition paths over the potential energy surface. One of the most fundamental tasks in this domain is structure relaxation (also known as structure/geometry optimization)&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Structure relaxation can be formulated as an optimization problem in terms of atomic positions (and lattice vectors, if considering crystals). Conventional methods include conjugate gradient methods (CG)&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; and quasi-Newton methods (QN)&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;, commonly found in off-the-shelf materials simulation software. Practically, CG offers better robustness but &lt;strong&gt;lacks efficiency&lt;/strong&gt;, while QN converges quickly &lt;strong&gt;only near local minima&lt;/strong&gt;. Theoretically, &lt;strong&gt;both lack global convergence guarantees&lt;/strong&gt;, especially when physical constraints are present. These constraints are significant in reducing the dimensionality of the configurational space and are relevant in various downstream applications.&lt;/p&gt;
+&lt;p&gt;Regarding structure relaxation, my interests basically concern with &lt;strong&gt;developing computationally efficient and theoretically convergent optimization methods catering for various applications&lt;/strong&gt;. Currently, my collaborators and I are primarily working on:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;crystal structure relaxation under physical constraints.&lt;/li&gt;
+&lt;li&gt;Crystal structure relaxation under physical constraints.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;By the way, I also pay attention to the effect of inexact oracles (or error propagation) on structure relaxation.&lt;/p&gt;
+&lt;!--By the way, I also pay attention to the effect of inexact oracles (or error propagation) on structure relaxation. --&gt;
 &lt;h3 id=&#34;a-idcrystal-structure-relaxation-under-physical-constraintscrystal-structure-relaxation-under-physical-constraintsa&#34;&gt;&lt;a id=&#34;crystal-structure-relaxation-under-physical-constraints&#34;&gt;&lt;strong&gt;Crystal structure relaxation under physical constraints&lt;/strong&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Collaborators:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Collaborators (in the alphabetic order):&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.iapcm.ac.cn/teaching_detail_103.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Xingyu Gao&lt;/a&gt; (China Academy of Engineering Physics);&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://lsec.cc.ac.cn/~liuxin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Xin Liu&lt;/a&gt; (Chinese Academy of Sciences);&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.iapcm.ac.cn/teaching_detail_136.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Haifeng Song&lt;/a&gt; (China Academy of Engineering Physics);&lt;/li&gt;
-&lt;li&gt;Yafan Zhao (China Academy of Engineering Physics);&lt;/li&gt;
-&lt;li&gt;Xin Chen (China Academy of Engineering Physics);&lt;/li&gt;
-&lt;li&gt;Junlei Yin (Northwest Polytechnical University);&lt;/li&gt;
 &lt;li&gt;Zhen Yang (University of Science and Technology Beijing).&lt;/li&gt;
+&lt;li&gt;Junlei Yin (Northwest Polytechnical University);&lt;/li&gt;
+&lt;li&gt;Yafan Zhao (China Academy of Engineering Physics);&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;We consider requirements from several contexts, encompassing relaxation&lt;/p&gt;
+&lt;p&gt;We address requirements from several contexts, encompassing relaxation&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;with fixed lattice vectors;&lt;/li&gt;
-&lt;li&gt;with fixed unit cell volumes;&lt;/li&gt;
-&lt;li&gt;under given external pressures.&lt;/li&gt;
+&lt;li&gt;with a fixed unit cell volume;&lt;/li&gt;
+&lt;li&gt;under a given external pressure.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Notably, (2) is frequently seen in the calculations of the equations of state as well as material response functions, (3) finds itself in structure searches under high external pressures. Mathematically, (2) corresponds to a nonconvex determinant constrained problem, to which little attention has been paid from the optimization community.&lt;/p&gt;
-&lt;p&gt;Our works largely improve the execution of the line minimization process, in which CG can easily get trapped. Roughly speaking, the developed methods imitate the Newton method by exploiting the curvature of the potential energy surface, yet with computational costs in line with that of CG. The overall convergence is ensured by an improved nonmonotone stopping rule for the line minimization process. &lt;strong&gt;Across a benchmark set with good universality, our methods achieve over 50% speedup against CG without any failure.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font color=#D64D8A&gt;&lt;em&gt;We have developed a suite called&lt;/em&gt; &amp;ldquo;ProMe-SuRe&amp;rdquo; &lt;em&gt;for crystal structure relaxation with the above functions realized. The suite can be interfaced to some off-the-shelf materials simulation package. Static-link library files are available upon request!&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;Notably, (2) is frequently seen in the calculations of the equations of state as well as material response functions, (3) finds itself in structure searches under high external pressures. Mathematically, (2) corresponds to a nonconvex determinant constrained problem, which has received little attention from the optimization community.&lt;/p&gt;
+&lt;p&gt;Our works significantly improve the execution of the line minimization process, where CG can easily get trapped. Our developed methods imitate the Newton method by exploiting the curvature of the potential energy surface, yet maintain single-step computational costs similar to CG. Additionally, to handle nonconvex constraints, we incorporate search direction projections onto the tangent cones of the feasible set. The overall convergence is ensured by an improved nonmonotone stopping rule for the line minimization process. &lt;strong&gt;Across a benchmark set containing over 200 structures with good universality, our methods achieve over 40% speedup compared to CG, without any failures.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=#D64D8A&gt;&lt;em&gt;We have developed a suite called&lt;/em&gt; &amp;ldquo;ProME-SuRe&amp;rdquo; &lt;em&gt;for crystal structure relaxation with the above functionalities. The suite can interface with some off-the-shelf materials simulation packages. Static-link library files are available upon request!&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Y. Hu, X. Gao, Y. Zhao, X. Liu, and H. Song. Force-based gradient descent method for &lt;em&gt;ab initio&lt;/em&gt; atomic structure relaxation. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;Physical Review B&lt;/em&gt;&lt;/font&gt;, 2022, 106(10): 104101. (&lt;a href=&#34;https://doi.org/10.1103/PhysRevB.106.104101&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;H.&lt;/strong&gt;, X. Gao, Y. Zhao, X. Liu, and H. Song. Force-based gradient descent method for &lt;em&gt;ab initio&lt;/em&gt; atomic structure relaxation. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;Physical Review B&lt;/em&gt;&lt;/font&gt;, 2022, 106(10): 104101. (&lt;a href=&#34;https://doi.org/10.1103/PhysRevB.106.104101&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Y. Hu, J. Yin, X. Gao, X. Liu, and H. Song. Projected gradient descent algorithm for &lt;em&gt;ab initio&lt;/em&gt; crystal structure relaxation under a fixed unit cell volume. &lt;font face=&#34;Times New Roman&#34;&gt;arXiv preprint&lt;/font&gt;, 2024, arXiv:2405.02934.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;H.&lt;/strong&gt;, J. Yin, X. Gao, X. Liu, and H. Song. Projected gradient descent algorithm for &lt;em&gt;ab initio&lt;/em&gt; crystal structure relaxation under a fixed unit cell volume. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;Physical Review B&lt;/em&gt;&lt;/font&gt;, 2024, 109(22): 224108. (&lt;a href=&#34;https://doi.org/10.1103/PhysRevB.109.224108&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Patents and Copyrights&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Patents and copyrights&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;X. Gao, X. Liu, Y. Hu, H. Song, X. Chen, Y. Wang, and L. Wang. 晶体结构弛豫软件包 ProMe-SuRe. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;CN Software Copyright&lt;/em&gt;&lt;/font&gt;, 2023, 2023SR1558824.&lt;/p&gt;
+&lt;p&gt;X. Gao, X. Liu, &lt;strong&gt;H.&lt;/strong&gt;, H. Song, X. Chen, Y. Wang, and L. Wang. 晶体结构弛豫软件包 ProMe-SuRe. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;CN Software Copyright&lt;/em&gt;&lt;/font&gt;, 2023, 2023SR1558824.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;X. Gao, X. Liu, H. Song, Y. Hu, X. Chen, Y. Wang, J. Fang, L. Wang, and L. Zhang. 固定晶格体积晶体结构弛豫的计算方法及装置. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;CN Patent&lt;/em&gt;&lt;/font&gt;, 2023, ZL 202211210741.3.&lt;/p&gt;
+&lt;p&gt;X. Gao, X. Liu, H. Song, &lt;strong&gt;H.&lt;/strong&gt;, X. Chen, Y. Wang, J. Fang, L. Wang, and L. Zhang. 固定晶格体积晶体结构弛豫的计算方法及装置. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;CN Patent&lt;/em&gt;&lt;/font&gt;, 2023, ZL 202211210741.3.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;X. Gao, X. Liu, H. Song, Y. Hu, J. Fang, Z. Yang, Y. Zhao, L. Wang, and H. Liu. 原子结构弛豫的非单调线搜索方法及装置. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;CN Patent&lt;/em&gt;&lt;/font&gt;, 2022, ZL 202111534901.5.&lt;/p&gt;
+&lt;p&gt;X. Gao, X. Liu, H. Song, &lt;strong&gt;H.&lt;/strong&gt;, J. Fang, Z. Yang, Y. Zhao, L. Wang, and H. Liu. 原子结构弛豫的非单调线搜索方法及装置. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;CN Patent&lt;/em&gt;&lt;/font&gt;, 2022, ZL 202111534901.5.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Ongoing works&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Optimization methods for crystal structure relaxation that preserve symmetry.&lt;/li&gt;
-&lt;li&gt;Analysis for error propagation on structure relaxation.&lt;/li&gt;
+&lt;li&gt;Optimization methods for crystal structure relaxation with spacegroup symmetry constraints.&lt;/li&gt;
+&lt;li&gt;Error propagation analysis on structure relaxation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
@@ -88,57 +87,57 @@
     </item>
     
     <item>
-      <title>Electronic structure calculations for strongly correlated electron systems</title>
+      <title>Electronic Structure Calculations for Strongly Correlated Electron Systems</title>
       <link>https://huyukuan.github.io/research/electronic-structure-calculations/</link>
       <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://huyukuan.github.io/research/electronic-structure-calculations/</guid>
-      <description>&lt;p&gt;According to the celebrated density functional theory&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, the ground state of a many-electron system can be determined by the single-particle density, eliminating the curse of dimensionality in principle. The variational argument leads to a universal functional comprising of kinetic and electron-electron interaction contributions, yet lacking a tractable expression.&lt;/p&gt;
-&lt;p&gt;The popular Kohn-Sham (KS) density functional theory&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; takes a non-interacting reference system and lays emphasis on approximating the kinetic contribution. On account of this starting point, &lt;strong&gt;the KS model can fail to capture the true things for strongly correlated systems&lt;/strong&gt; where the interaction energy dominates, even with the state-of-the-art exchange-correlation functionals&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. Since strongly correlated materials find &lt;strong&gt;broad applications&lt;/strong&gt; (e.g., high-temperature superconductivity, thermoelectric materials, and magnetic storage), new mathematical models and approaches are in an urgent need.&lt;/p&gt;
-&lt;p&gt;So far, a plethora of models have been constantly emerging, where the issue of high dimensionality often underlies. My interests revolve around &lt;strong&gt;analyzing their theoretical properties and developing scalable numerical approaches&lt;/strong&gt;. At this moment, my collaborators and I mainly work on&lt;/p&gt;
+      <description>&lt;p&gt;According to the celebrated density functional theory (DFT)&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, the ground state of a many-electron system can be determined by the single-particle density, effectively eliminating the curse of dimensionality in principle. The variational argument leads to the universal Levy-Lieb functional, comprising both kinetic and electron-electron interaction contributions, yet &lt;strong&gt;lacking a tractable expression&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The popular Kohn-Sham DFT (KSDFT)&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; uses a non-interacting reference system and focuses on approximating the kinetic contribution. The approximation error for the Levy-Lieb functional is called the exchange-correlation functional, which has no closed-form expression. Because of its starting point, &lt;strong&gt;KSDFT can fail to accurately capture the behavior of strongly correlated electron systems&lt;/strong&gt;, where interaction energy dominates, even with state-of-the-art approximations of exchange-correlation functionals&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. Since strongly correlated materials have broad applications (e.g., high-temperature superconductivity, thermoelectric materials, and magnetic storage), alternative models and numerical approaches are urgently needed.&lt;/p&gt;
+&lt;p&gt;A plethora of models have emerged, often contending with the curse of dimensionality. My interests revolve around &lt;strong&gt;analyzing their theoretical properties and developing scalable numerical approaches&lt;/strong&gt;. Currently, my collaborators and I are primarily working on:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;strictly-correlated-electrons density functional theory&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;;&lt;/p&gt;
+&lt;p&gt;Strictly-correlated-electrons density functional theory&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;variational Monte Carlo methods&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Variational Monte Carlo methods&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;a-idstrictly-correlated-electrons-density-functional-theorystrictly-correlated-electrons-density-functional-theorya&#34;&gt;&lt;a id=&#34;strictly-correlated-electrons-density-functional-theory&#34;&gt;&lt;strong&gt;Strictly-correlated-electrons density functional theory&lt;/strong&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Collaborators:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Collaborators (in the alphabetic order):&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://math0.bnu.edu.cn/~chenhuajie/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Huajie Chen&lt;/a&gt; (Beijing Normal University);&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://lsec.cc.ac.cn/~liuxin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Xin Liu&lt;/a&gt; (Chinese Academy of Sciences);&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://mengyu8042.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mengyu Li&lt;/a&gt; (Renmin University of China);&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://lsec.cc.ac.cn/~liuxin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Xin Liu&lt;/a&gt; (Chinese Academy of Sciences);&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://chengzijunaixiaoli.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cheng Meng&lt;/a&gt; (Renmin University of China).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This model runs from the opposite face of the KS model and builds on a multimarginal optimal transport problem with Coulomb cost (MMOT). Leveraging a low-dimensional ansatz for the square modulus of wave function $|\Psi|^2$, which takes roots in optimal transport and encodes two-electron couplings, one could derive a nonconvex reformulation for the MMOT. The number of unknowns therein scales linearly with respect to the number of electrons. Due to the intricacies of the nonconvex problem, existing works in this aspect consider systems with only two electrons.&lt;/p&gt;
-&lt;p&gt;Our contributions:&lt;/p&gt;
+&lt;p&gt;This model runs from the opposite face of KSDFT and builds on a multimarginal optimal transport problem with Coulomb cost (MMOT). Leveraging a low-dimensional ansatz for the square modulus of wave function $|\Psi|^2$, which takes roots in optimal transport and encodes two-electron couplings, one could derive a nonconvex reformulation for the MMOT. The number of unknowns therein scales linearly with respect to the number of electrons. Due to the intricacies of the nonconvex problem, existing works in this aspect consider systems with only two electrons.&lt;/p&gt;
+&lt;p&gt;Our contributions include:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;establish the theoretical properties of the nonconvex formulation.&lt;/strong&gt; Violating conventional constraint qualifications, the nonconvex formulation (denoted by (P)) itself is not appropriate for numerical resolution. Without extra assumptions in the literature, we establish the equivalence between (P) and a nonconvex quadratic programming (denoted by (P&amp;rsquo;)). Interestingly, we numerically observe that (P&amp;rsquo;) is &amp;ldquo;nearly&amp;rdquo; amenable to any local solvers;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;propose a global optimization framework trading off accuracy and efficiency.&lt;/strong&gt; Enlightened by the idea of multigrid methods and optimal transport, we starts with solving (P&amp;rsquo;) globally over a coarse mesh and proceeds with merely local solvers for (P&amp;rsquo;) over finer meshes. The local solvers are fed with initial points constructed from the previous solutions. In simulations, electron positions mappings are first visualized in two/three-dimensional contexts; &lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;devise sampling-based methods as local solvers without cubic complexities.&lt;/strong&gt; To alleviate the cubic computational burden in gradient calculations, we adopt Kullback-Leibler divergence and incorporate importance sampling-based matrix sparsification into iterative schemes. The resulted methods do not store and operate on dense matrices at all. Compared with conventional stochastic algorithms, our methods add randomness to constraints in essence. &lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;provide the first convergence results for the local solvers under realizable conditions.&lt;/strong&gt; For better efficiency, the involved local solvers may invoke infeasible methods for subproblems. With infeasible iterates, the nonmonotonicity of objective values is inevitable, complicating the convergence analyses. Unlike the existing works, we show the convergence under realizable conditions. Novel convergence rates are also derived.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Establishing the theoretical properties of the nonconvex formulation.&lt;/strong&gt; The nonconvex formulation (denoted as (P)) is not suitable for numerical resolution due to violating conventional constraint qualifications. We establish the equivalence between (P) and a nonconvex quadratic programming (denoted as (P&amp;rsquo;)) without additional assumptions from the literature. Interestingly, we numerically observe that (P&amp;rsquo;) is &amp;ldquo;nearly&amp;rdquo; amenable to any local solvers.&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Proposing a multigrid optimization framework balancing accuracy and efficiency.&lt;/strong&gt; Inspired by the multigrid methods and optimal transport, we starts with solving (P&amp;rsquo;) accurately over a coarse mesh and proceeds with local solvers for (P&amp;rsquo;) over finer meshes. The local solvers are fed with initial points constructed from the previous solutions. In simulations, electron positions mappings are first visualized in two/three-dimensional contexts. &lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Devising sampling-based methods as local solvers without cubic complexities.&lt;/strong&gt; To reduce the cubic computational burden in gradient calculations, we adopt Kullback-Leibler divergence and incorporate importance sampling-based matrix sparsification into iterative schemes. These methods avoid storing and operating on dense matrices. Compared with conventional stochastic algorithms, our methods add randomness to constraints. &lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Providing the first convergence results for the local solvers under realizable conditions.&lt;/strong&gt; To enhance efficiency, local solvers may use infeasible methods for subproblems. With infeasible iterates, nonmonotonicity of objective values is inevitable, complicating convergence analyses. Unlike existing works, we demonstrate convergence under realizable conditions and derive novel convergence rates.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;List of publications&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Y. Hu, H. Chen, and X. Liu. A global optimization approach for multimarginal optimal transport problems with Coulomb cost. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;SIAM Journal on Scientific Computing&lt;/em&gt;&lt;/font&gt;, 2023, 45(3): A1214-A1238. (&lt;a href=&#34;https://doi.org/10.1137/21M1455164&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;H.&lt;/strong&gt;, H. Chen, and X. Liu. A global optimization approach for multimarginal optimal transport problems with Coulomb cost. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;SIAM Journal on Scientific Computing&lt;/em&gt;&lt;/font&gt;, 2023, 45(3): A1214-A1238. (&lt;a href=&#34;https://doi.org/10.1137/21M1455164&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Y. Hu and X. Liu. The convergence properties of infeasible inexact proximal alternating linearized minimization. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;Science China Mathematics&lt;/em&gt;&lt;/font&gt;, 2023, 66(10): 2385-2410. (&lt;a href=&#34;https://doi.org/10.1007/s11425-022-2074-7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;H.&lt;/strong&gt; and X. Liu. The convergence properties of infeasible inexact proximal alternating linearized minimization. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;Science China Mathematics&lt;/em&gt;&lt;/font&gt;, 2023, 66(10): 2385-2410. (&lt;a href=&#34;https://doi.org/10.1007/s11425-022-2074-7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Y. Hu and X. Liu. The exactness of the $\ell_1$ penalty function for a class of mathematical programs with generalized complementarity constraints. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;Fundamental Research&lt;/em&gt;&lt;/font&gt;, available online. (&lt;a href=&#34;https://doi.org/10.1016/j.fmre.2023.04.006&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;H.&lt;/strong&gt; and X. Liu. The exactness of the $\ell_1$ penalty function for a class of mathematical programs with generalized complementarity constraints. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;Fundamental Research&lt;/em&gt;&lt;/font&gt;, published online. DOI: 10.1016/j.fmre.2023.04.006. (&lt;a href=&#34;https://doi.org/10.1016/j.fmre.2023.04.006&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Y. Hu, M. Li, X. Liu, and C. Meng. Sampling-based methods for multi-block optimization problems over transport polytopes. &lt;font face=&#34;Times New Roman&#34;&gt;arXiv preprint&lt;/font&gt;, arXiv: 2306.16763. (&lt;a href=&#34;https://arxiv.org/pdf/2306.16763.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;H.&lt;/strong&gt;, M. Li, X. Liu, and C. Meng. Sampling-based methods for multi-block optimization problems over transport polytopes. &lt;font face=&#34;Times New Roman&#34;&gt;&lt;em&gt;Mathematics of Computation&lt;/em&gt;&lt;/font&gt;, 2024+, accepted. (&lt;a href=&#34;https://arxiv.org/pdf/2306.16763.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Ongoing works&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Local solvers with nice scaling with respect to the number of electrons and discretization size.&lt;/li&gt;
+&lt;li&gt;Local solvers with better scaling with respect to the number of electrons and discretization size.&lt;/li&gt;
 &lt;li&gt;Landscape analysis for the nonconvex reformulation of the MMOT.&lt;/li&gt;
-&lt;li&gt;Convergence analysis for the global optimization framework.&lt;/li&gt;
+&lt;li&gt;Convergence analysis for the multigrid optimization framework.&lt;/li&gt;
 &lt;li&gt;Numerical approaches for the other reformulations of the MMOT.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
@@ -154,7 +153,7 @@
 &lt;p&gt;&lt;a href=&#34;https://www.science.org/doi/abs/10.1126/science.1158722&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.science.org/doi/abs/10.1126/science.1158722&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34;&gt;
-&lt;p&gt;&lt;a href=&#34;https://link.springer.com/chapter/10.1007/978-3-031-22340-2_4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://link.springer.com/chapter/10.1007/978-3-031-22340-2_4&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Strictly-Correlated-Electrons_density_functional_theory&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/Strictly-Correlated-Electrons_density_functional_theory&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:5&#34;&gt;
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Variational_Monte_Carlo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/Variational_Monte_Carlo&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
