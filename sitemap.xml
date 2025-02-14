@@ -2,6 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://huyukuan.github.io/publication-type/2/</loc>
+    <lastmod>2025-02-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://huyukuan.github.io/publication_types/</loc>
+    <lastmod>2025-02-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://huyukuan.github.io/publication/</loc>
+    <lastmod>2025-02-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://huyukuan.github.io/publication/2025-mcom-mbotp/</loc>
+    <lastmod>2025-02-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://huyukuan.github.io/publication-type/3/</loc>
     <lastmod>2025-01-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -10,24 +26,8 @@
     <lastmod>2025-01-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://huyukuan.github.io/publication_types/</loc>
-    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://huyukuan.github.io/publication/</loc>
-    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://huyukuan.github.io/publication-type/2/</loc>
-    <lastmod>2024-11-30T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://huyukuan.github.io/publication/2024-fr-l1mpgcc/</loc>
     <lastmod>2024-11-30T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://huyukuan.github.io/publication/2024-mcom-mbotp/</loc>
-    <lastmod>2024-08-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://huyukuan.github.io/publication/2024-prb-panbb/</loc>
