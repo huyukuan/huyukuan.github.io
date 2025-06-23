@@ -5,12 +5,20 @@
     <link>https://huyukuan.github.io/publication/</link>
       <atom:link href="https://huyukuan.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 14 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 23 Jun 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://huyukuan.github.io/media/icon_huf7d2ae589d240638b0dc23db94c10dcf_18673_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://huyukuan.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>Critical point search and linear response theory for computing electronic excitation energies of molecular systems. Part I: General framework, application to Hartree-Fock and DFT</title>
+      <link>https://huyukuan.github.io/publication/2025-arxiv-lrcpkahler/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://huyukuan.github.io/publication/2025-arxiv-lrcpkahler/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Sampling-based methods for multi-block optimization problems over transport polytopes</title>
